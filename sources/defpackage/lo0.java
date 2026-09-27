@@ -1,0 +1,35 @@
+package defpackage;
+
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes.dex */
+public final class lo0 {
+    public final Object a;
+
+    public /* synthetic */ lo0(Object obj) {
+        this.a = obj;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof lo0) {
+            if (!Intrinsics.areEqual(this.a, ((lo0) obj).a)) {
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        Object obj = this.a;
+        if (obj == null) {
+            return 0;
+        }
+        return obj.hashCode();
+    }
+
+    public final String toString() {
+        return "AsyncTypefaceResult(result=" + this.a + ')';
+    }
+}

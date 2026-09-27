@@ -1,0 +1,13 @@
+{
+  "name": "deposit-failure-multi-button",
+  "description": "Deposit submit returns a multi-button FailureAction alert; all other traffic is live.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "POST", "path": "/v1/payments/deposits" },
+      "respond": [
+        { "status": 400, "fixture": "deposit-failure-multi-button-error" }
+      ]
+    }
+  ]
+}

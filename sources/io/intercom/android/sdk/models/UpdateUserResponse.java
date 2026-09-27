@@ -1,0 +1,50 @@
+package io.intercom.android.sdk.models;
+
+import io.intercom.android.sdk.models.UsersResponse;
+import io.intercom.android.sdk.models.carousel.Carousel;
+import io.intercom.android.sdk.survey.model.SurveyData;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes6.dex */
+public class UpdateUserResponse extends UsersResponse {
+    private final Carousel carousel;
+    private final SurveyData surveyData;
+
+    public UpdateUserResponse(Builder builder) {
+        super(builder);
+        Carousel.Builder builder2 = builder.carousel;
+        this.carousel = (builder2 == null ? new Carousel.Builder() : builder2).build();
+        SurveyData surveyData = builder.survey;
+        this.surveyData = surveyData == null ? SurveyData.INSTANCE.getNULL() : surveyData;
+    }
+
+    public Carousel getCarousel() {
+        return this.carousel;
+    }
+
+    public SurveyData getSurveyData() {
+        return this.surveyData;
+    }
+
+    /* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+    /* loaded from: classes6.dex */
+    public static final class Builder extends UsersResponse.Builder {
+        Carousel.Builder carousel;
+        SurveyData survey;
+
+        @Override // io.intercom.android.sdk.models.UsersResponse.Builder, io.intercom.android.sdk.models.BaseResponse.Builder
+        public UpdateUserResponse build() {
+            return new UpdateUserResponse(this);
+        }
+
+        @Override // io.intercom.android.sdk.models.UsersResponse.Builder, io.intercom.android.sdk.models.BaseResponse.Builder
+        public /* bridge */ /* synthetic */ UsersResponse build() {
+            return build();
+        }
+
+        @Override // io.intercom.android.sdk.models.UsersResponse.Builder, io.intercom.android.sdk.models.BaseResponse.Builder
+        public /* bridge */ /* synthetic */ BaseResponse build() {
+            return build();
+        }
+    }
+}

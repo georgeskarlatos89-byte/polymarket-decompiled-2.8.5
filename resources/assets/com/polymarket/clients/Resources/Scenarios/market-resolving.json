@@ -1,0 +1,25 @@
+{
+  "name": "market-resolving",
+  "description": "The QA game event and its position are mid-resolution: pending banners, gated trade CTAs, frozen chart.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/slug/qa-resolution-game" },
+      "respond": [
+        { "status": 200, "fixture": "resolution-event-resolving" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/v1/events", "query": { "slug": "qa-resolution-game" } },
+      "respond": [
+        { "status": 200, "fixture": "resolution-events-list-resolving" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/v1/portfolio/positions" },
+      "respond": [
+        { "status": 200, "fixture": "resolution-positions" }
+      ]
+    }
+  ]
+}

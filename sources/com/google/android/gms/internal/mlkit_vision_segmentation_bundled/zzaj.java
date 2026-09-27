@@ -1,0 +1,62 @@
+package com.google.android.gms.internal.mlkit_vision_segmentation_bundled;
+
+import java.util.Map;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+final class zzaj extends zzx {
+    final /* synthetic */ zzal zza;
+    private final Object zzb;
+    private int zzc;
+
+    public zzaj(zzal zzalVar, int i) {
+        this.zza = zzalVar;
+        this.zzb = zzal.zzg(zzalVar, i);
+        this.zzc = i;
+    }
+
+    private final void zza() {
+        int i = this.zzc;
+        if (i != -1 && i < this.zza.size() && zzh.zza(this.zzb, zzal.zzg(this.zza, this.zzc))) {
+            return;
+        }
+        this.zzc = zzal.zzd(this.zza, this.zzb);
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_segmentation_bundled.zzx, java.util.Map.Entry
+    public final Object getKey() {
+        return this.zzb;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_segmentation_bundled.zzx, java.util.Map.Entry
+    public final Object getValue() {
+        Map zzl = this.zza.zzl();
+        if (zzl != null) {
+            return zzl.get(this.zzb);
+        }
+        zza();
+        int i = this.zzc;
+        if (i == -1) {
+            return null;
+        }
+        return zzal.zzj(this.zza, i);
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_segmentation_bundled.zzx, java.util.Map.Entry
+    public final Object setValue(Object obj) {
+        Map zzl = this.zza.zzl();
+        if (zzl != null) {
+            return zzl.put(this.zzb, obj);
+        }
+        zza();
+        int i = this.zzc;
+        zzal zzalVar = this.zza;
+        if (i == -1) {
+            zzalVar.put(this.zzb, obj);
+            return null;
+        }
+        Object zzj = zzal.zzj(zzalVar, i);
+        zzal.zzn(zzalVar, this.zzc, obj);
+        return zzj;
+    }
+}

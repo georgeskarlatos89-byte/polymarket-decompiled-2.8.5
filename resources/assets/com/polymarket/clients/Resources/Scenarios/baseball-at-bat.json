@@ -1,0 +1,23 @@
+{
+  "name": "baseball-at-bat",
+  "description": "The QA baseball game advances top -> mid-break -> bottom of the 2nd on successive detail fetches; refresh to step the at-bat indicator through away, none, home.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/slug/qa-baseball-game" },
+      "respond": [
+        { "status": 200, "fixture": "baseball-event-top" },
+        { "status": 200, "fixture": "baseball-event-mid" },
+        { "status": 200, "fixture": "baseball-event-bottom" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/qa-baseball-evt" },
+      "respond": [
+        { "status": 200, "fixture": "baseball-event-top" },
+        { "status": 200, "fixture": "baseball-event-mid" },
+        { "status": 200, "fixture": "baseball-event-bottom" }
+      ]
+    }
+  ]
+}

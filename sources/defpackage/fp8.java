@@ -1,0 +1,42 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes.dex */
+public final class fp8 {
+    public final float a;
+    public final float b;
+    public final long c;
+
+    public fp8(float f, float f2, long j) {
+        this.a = f;
+        this.b = f2;
+        this.c = j;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof fp8)) {
+            return false;
+        }
+        fp8 fp8Var = (fp8) obj;
+        if (Float.compare(this.a, fp8Var.a) == 0 && Float.compare(this.b, fp8Var.b) == 0 && this.c == fp8Var.c) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Long.hashCode(this.c) + sv6.a(Float.hashCode(this.a) * 31, this.b, 31);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("ClickInfo(x=");
+        sb.append(this.a);
+        sb.append(", y=");
+        sb.append(this.b);
+        sb.append(", timestamp=");
+        return ix2.n(sb, this.c, ')');
+    }
+}

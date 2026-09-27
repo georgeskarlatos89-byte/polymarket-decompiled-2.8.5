@@ -1,0 +1,13 @@
+{
+  "name": "order-timeout",
+  "description": "Order placement times out; all other traffic is live.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "POST", "path": "/v1/orders" },
+      "respond": [
+        { "delayMs": 1500, "error": "timeout" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+package io.ably.lib.util;
+
+import io.ably.lib.types.ReadOnlyMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes5.dex */
+public abstract class InternalMap<K, V> implements ReadOnlyMap<K, V> {
+    protected final ConcurrentMap<K, V> map = new ConcurrentHashMap();
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final boolean containsKey(Object obj) {
+        return this.map.containsKey(obj);
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final boolean containsValue(Object obj) {
+        return this.map.containsValue(obj);
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final Iterable<Map.Entry<K, V>> entrySet() {
+        return this.map.entrySet();
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final V get(Object obj) {
+        return this.map.get(obj);
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final boolean isEmpty() {
+        return this.map.isEmpty();
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final Iterable<K> keySet() {
+        return this.map.keySet();
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final int size() {
+        return this.map.size();
+    }
+
+    @Override // io.ably.lib.types.ReadOnlyMap
+    public final Iterable<V> values() {
+        return this.map.values();
+    }
+}

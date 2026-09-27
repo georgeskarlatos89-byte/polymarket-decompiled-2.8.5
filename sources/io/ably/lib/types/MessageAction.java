@@ -1,0 +1,19 @@
+package io.ably.lib.types;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes5.dex */
+public enum MessageAction {
+    MESSAGE_CREATE,
+    MESSAGE_UPDATE,
+    MESSAGE_DELETE,
+    META,
+    MESSAGE_SUMMARY,
+    MESSAGE_APPEND;
+
+    public static MessageAction tryFindByOrdinal(int i) {
+        if (values().length <= i) {
+            return null;
+        }
+        return values()[i];
+    }
+}

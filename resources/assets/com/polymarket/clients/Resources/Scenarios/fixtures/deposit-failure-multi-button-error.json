@@ -1,0 +1,30 @@
+{
+  "code": 9,
+  "message": "Card declined",
+  "details": [
+    {
+      "@type": "type.googleapis.com/gateway.payments.v1.FailureAction",
+      "buttonLabel": "Legacy label",
+      "detailLabel": "Your bank declined this deposit.",
+      "buttons": [
+        {
+          "label": "Try another method",
+          "style": "primary",
+          "kind": "navigate",
+          "actionUrl": "https://polymarket.us/deposit/payment-methods"
+        },
+        {
+          "label": "Learn more",
+          "style": "secondary",
+          "kind": "web",
+          "actionUrl": "https://help.polymarket.us/declines"
+        },
+        {
+          "label": "Got it",
+          "style": "text",
+          "kind": "dismiss"
+        }
+      ]
+    }
+  ]
+}

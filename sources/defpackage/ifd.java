@@ -1,0 +1,11 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes.dex */
+public abstract class ifd {
+    public static final rpc a = new rpc(0);
+
+    public static final rpc a() {
+        return new rpc(0, 1, null);
+    }
+}

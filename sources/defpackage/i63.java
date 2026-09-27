@@ -1,0 +1,18 @@
+package defpackage;
+
+import android.content.Context;
+import android.os.Bundle;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes5.dex */
+public interface i63 {
+    void b(Bundle bundle);
+
+    void c(Context context);
+
+    void d(Bundle bundle);
+
+    void e(Context context);
+
+    void f(Context context);
+}

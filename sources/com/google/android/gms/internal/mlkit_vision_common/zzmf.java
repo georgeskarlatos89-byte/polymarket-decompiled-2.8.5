@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.mlkit_vision_common;
+
+import android.content.Context;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+public final class zzmf implements zzmc {
+    final List zza;
+
+    public zzmf(Context context, zzme zzmeVar) {
+        ArrayList arrayList = new ArrayList();
+        this.zza = arrayList;
+        if (zzmeVar.zzc()) {
+            arrayList.add(new zzmp(context, zzmeVar));
+        }
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_common.zzmc
+    public final void zza(zzmb zzmbVar) {
+        Iterator it = this.zza.iterator();
+        while (it.hasNext()) {
+            ((zzmc) it.next()).zza(zzmbVar);
+        }
+    }
+}

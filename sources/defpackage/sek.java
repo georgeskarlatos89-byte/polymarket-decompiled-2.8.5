@@ -1,0 +1,32 @@
+package defpackage;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes5.dex */
+public final class sek {
+    private static final /* synthetic */ ug7 $ENTRIES;
+    private static final /* synthetic */ sek[] $VALUES;
+    public static final sek HEADER;
+    public static final sek INLINE;
+
+    /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Enum, sek] */
+    /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Enum, sek] */
+    static {
+        ?? r0 = new Enum("HEADER", 0);
+        HEADER = r0;
+        ?? r1 = new Enum("INLINE", 1);
+        INLINE = r1;
+        sek[] sekVarArr = {r0, r1};
+        $VALUES = sekVarArr;
+        $ENTRIES = new wg7(sekVarArr);
+    }
+
+    public static sek valueOf(String str) {
+        return (sek) Enum.valueOf(sek.class, str);
+    }
+
+    public static sek[] values() {
+        return (sek[]) $VALUES.clone();
+    }
+}

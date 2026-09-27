@@ -1,0 +1,15 @@
+package io.sentry.util;
+
+import java.lang.ref.WeakReference;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes6.dex */
+public final class j {
+    public final WeakReference a;
+    public final Object b;
+
+    public j(WeakReference weakReference, Object obj) {
+        this.a = weakReference;
+        this.b = obj;
+    }
+}

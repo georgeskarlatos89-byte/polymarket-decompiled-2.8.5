@@ -1,0 +1,23 @@
+{
+  "positions": {
+    "qa-resolution-ml": {
+      "netPosition": "100",
+      "qtyBought": "100",
+      "qtySold": "0",
+      "cost": "60",
+      "realized": "0",
+      "bodPosition": "0",
+      "cashValue": "99",
+      "expired": false,
+      "marketMetadata": {
+        "slug": "qa-resolution-ml",
+        "title": "QA Falcons vs QA Comets",
+        "outcome": "QA Falcons",
+        "eventSlug": "qa-resolution-game"
+      }
+    }
+  },
+  "nextCursor": null,
+  "eof": true,
+  "availablePositions": ["qa-resolution-ml"]
+}

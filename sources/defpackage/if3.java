@@ -1,0 +1,9 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes4.dex */
+public final class if3 extends kf3 {
+    public static final if3 b = new kf3("AI");
+    public static final if3 c = new kf3("disabled");
+    public static final if3 d = new kf3("simple");
+}

@@ -1,0 +1,33 @@
+{
+  "event": {
+    "id": "qa-stream-denial-evt",
+    "category": "sports",
+    "slug": "qa-stream-denial-game",
+    "title": "QA Streamers vs QA Blockers",
+    "gameId": 77001,
+    "live": true,
+    "score": "55-51",
+    "streamProvider": "beter",
+    "livestreamAvailableBeforeStart": true,
+    "teams": [
+      { "id": 7701, "name": "QA Streamers", "abbreviation": "QAS", "league": "nba" },
+      { "id": 7702, "name": "QA Blockers", "abbreviation": "QAB", "league": "nba" }
+    ],
+    "markets": [
+      {
+        "id": "qa-stream-denial-ml",
+        "question": "Who wins?",
+        "slug": "qa-stream-denial-ml",
+        "category": "sports",
+        "marketType": "moneyline",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          { "id": "qa-stream-denial-ml-long", "long": true, "price": "0.6", "teamId": 7701 },
+          { "id": "qa-stream-denial-ml-short", "long": false, "price": "0.4", "teamId": 7702 }
+        ]
+      }
+    ]
+  }
+}

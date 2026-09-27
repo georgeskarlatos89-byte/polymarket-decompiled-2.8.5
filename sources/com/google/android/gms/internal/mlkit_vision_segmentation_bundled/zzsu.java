@@ -1,0 +1,65 @@
+package com.google.android.gms.internal.mlkit_vision_segmentation_bundled;
+
+import defpackage.ix2;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+final class zzsu extends zzsy {
+    private final String zza;
+    private final boolean zzb;
+    private final int zzc;
+
+    public /* synthetic */ zzsu(String str, boolean z, int i, zzst zzstVar) {
+        this.zza = str;
+        this.zzb = z;
+        this.zzc = i;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof zzsy) {
+            zzsy zzsyVar = (zzsy) obj;
+            if (this.zza.equals(zzsyVar.zzb()) && this.zzb == zzsyVar.zzc() && this.zzc == zzsyVar.zza()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int i;
+        int hashCode = this.zza.hashCode() ^ 1000003;
+        if (true != this.zzb) {
+            i = 1237;
+        } else {
+            i = 1231;
+        }
+        return this.zzc ^ (((hashCode * 1000003) ^ i) * 1000003);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("MLKitLoggingOptions{libraryName=");
+        sb.append(this.zza);
+        sb.append(", enableFirelog=");
+        sb.append(this.zzb);
+        sb.append(", firelogEventType=");
+        return ix2.i(this.zzc, "}", sb);
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_segmentation_bundled.zzsy
+    public final int zza() {
+        return this.zzc;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_segmentation_bundled.zzsy
+    public final String zzb() {
+        return this.zza;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_segmentation_bundled.zzsy
+    public final boolean zzc() {
+        return this.zzb;
+    }
+}

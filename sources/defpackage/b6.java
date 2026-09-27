@@ -1,0 +1,13 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+public final class b6 extends r7n {
+    public static final b6 a = new Object();
+
+    @Override // defpackage.r7n
+    public final mta d(mta mtaVar) {
+        mtaVar.getClass();
+        return mtaVar;
+    }
+}

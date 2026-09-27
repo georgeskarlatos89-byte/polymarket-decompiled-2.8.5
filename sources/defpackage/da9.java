@@ -1,0 +1,32 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+public abstract /* synthetic */ class da9 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[s49.values().length];
+        a = iArr;
+        try {
+            iArr[s49.SHA1.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            a[s49.SHA224.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            a[s49.SHA256.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            a[s49.SHA384.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            a[s49.SHA512.ordinal()] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+    }
+}

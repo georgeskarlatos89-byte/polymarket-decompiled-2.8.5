@@ -1,0 +1,186 @@
+{
+  "auth0Domain": {
+    "staging": "auth0-dev.polymarket.us",
+    "preprod": "auth0-dev.polymarket.us",
+    "production": "auth0.polymarket.us"
+  },
+  "auth0ClientId": {
+    "staging": {
+      "ios": "eaGdAnRotPd9ytR8guCeoBHx2HkgUsH6",
+      "android": "YWHZ9eUbEZFVAcpIhY9HanuxAeUiQPg3"
+    },
+    "preprod": {
+      "ios": "eaGdAnRotPd9ytR8guCeoBHx2HkgUsH6",
+      "android": "YWHZ9eUbEZFVAcpIhY9HanuxAeUiQPg3"
+    },
+    "production": {
+      "ios": "oUAtJrJF4VRzhpRCbsOEuoVuJZZSythG",
+      "android": "uZumNb4F8PY8hsG3Lmo7j6mS2Mqh9sLU"
+    }
+  },
+  "googleServerClientId": {
+    "staging": {
+      "android": "56698390541-ttn3jk6m1mlhd80ufsd95rooc7a697p1.apps.googleusercontent.com"
+    },
+    "preprod": {
+      "android": "56698390541-ttn3jk6m1mlhd80ufsd95rooc7a697p1.apps.googleusercontent.com"
+    },
+    "production": {
+      "android": "129179701299-5ae7uacqdlea7pbi7ddk9uvqq4hnjg97.apps.googleusercontent.com"
+    }
+  },
+  "appsFlyerDevKey": "6erwC6Kfp9PHxdMG2DYXcB",
+  "appsFlyerAppId": {
+    "staging": "3737373773",
+    "preprod": "6648798962",
+    "production": "6648798962"
+  },
+  "socureSdkKey": {
+    "staging": "a0a1869f-cf3e-4acb-919a-62b9fef30e3f",
+    "preprod": "a0a1869f-cf3e-4acb-919a-62b9fef30e3f",
+    "production": "7e3517eb-ff49-4228-abbb-682faa0ae58f"
+  },
+  "checkoutPublicKey": {
+    "staging": "pk_sbox_u4ajms2ay7akox22yrci6c3wyyd",
+    "preprod": "pk_sbox_u4ajms2ay7akox22yrci6c3wyyd",
+    "production": "pk_eugl6tkdl2wdcs4es6f2pmdjq4n"
+  },
+  "stripePublishableKey": {
+    "staging": "pk_test_51SsOxSE6TJOs4qtrCCs0Rzqwil1WIdxEjDyTs6cAHjJrQ6wGj8bWrTiKQO9uvZPESGrsQwZxX1SgeDOWwgRhzqi6003GtO94rO",
+    "preprod": "pk_test_51SsOxSE6TJOs4qtrCCs0Rzqwil1WIdxEjDyTs6cAHjJrQ6wGj8bWrTiKQO9uvZPESGrsQwZxX1SgeDOWwgRhzqi6003GtO94rO",
+    "production": "pk_live_51SsOxLCdRJBk4i0qSETc3owKnJ7HFBhdl0heoyv6ciYWO653II3MEilHPYLjdJaWlo8v1oexiBMeNBM0qWoOYcYL008GSeHnup"
+  },
+  "riskifiedShopDomain": {
+    "staging": "polymarket.com",
+    "preprod": "polymarket.com",
+    "production": "polymarket.com"
+  },
+  "aeropayEnvironment": {
+    "staging": "sandbox",
+    "preprod": "sandbox",
+    "production": "production"
+  },
+  "aeropayConsumerLightId": {
+    "staging": "4c400e32-b99b-4080-aec8-dd850a94792c",
+    "preprod": "4c400e32-b99b-4080-aec8-dd850a94792c",
+    "production": "bffb6a58-1250-4574-bdd8-924680afca93"
+  },
+  "aeropayConsumerDarkId": {
+    "staging": "7abb286d-5ac7-4b9c-bf6a-c1b9beff51a7",
+    "preprod": "7abb286d-5ac7-4b9c-bf6a-c1b9beff51a7",
+    "production": "5040c0f1-354b-4174-bae6-801a745a8775"
+  },
+  "customerIoCdpApiKey": {
+    "staging": "mock",
+    "preprod": "mock",
+    "production": "edba0dfd876f213e66b1"
+  },
+  "customerIoSiteId": {
+    "staging": "mock",
+    "preprod": "mock",
+    "production": "a81b4cfa7f3f693baea0"
+  },
+  "amplitudeApiKey": {
+    "staging": {
+      "ios": "0142b029ca8748ab85d07441146ac7af",
+      "android": "0142b029ca8748ab85d07441146ac7af"
+    },
+    "preprod": {
+      "ios": "0142b029ca8748ab85d07441146ac7af",
+      "android": "0142b029ca8748ab85d07441146ac7af"
+    },
+    "production": {
+      "ios": "d5901135e921ef26f606d9765f63bfe0",
+      "android": "d5901135e921ef26f606d9765f63bfe0"
+    }
+  },
+  "amplitudeExperimentDeploymentKey": {
+    "staging": {
+      "ios": "client-BM5VWzVRt1owkUMO3RxkTiXMsmAjfca3",
+      "android": "client-BM5VWzVRt1owkUMO3RxkTiXMsmAjfca3"
+    },
+    "preprod": {
+      "ios": "client-BM5VWzVRt1owkUMO3RxkTiXMsmAjfca3",
+      "android": "client-BM5VWzVRt1owkUMO3RxkTiXMsmAjfca3"
+    },
+    "production": {
+      "ios": "client-3glX4XKbgnkWF9gWJynnyptYtXoTLDY7",
+      "android": "client-3glX4XKbgnkWF9gWJynnyptYtXoTLDY7"
+    }
+  },
+  "launchDarklyMobileKey": {
+    "staging": "mob-8f0c9f8b-19bd-44f3-94c0-dc38dd924195",
+    "preprod": "mob-2b124c05-0f6f-494a-9f7f-83e092774221",
+    "production": "mob-dcce9509-7cf9-4797-b21f-dc3a8cf3a2bb"
+  },
+  "streamApiKey": {
+    "staging": "hdfa6f6qew54",
+    "preprod": "hdfa6f6qew54",
+    "production": "ztrw5ppa38cz"
+  },
+  "intercomApiKey": {
+    "staging": {
+      "ios": "ios_sdk-2b81c1e2ef03e7fe96548d539851decb3fe43869",
+      "android": "android_sdk-285551b3e5e5cd0c62a0b998ecd3686ab621dc22"
+    },
+    "preprod": {
+      "ios": "ios_sdk-2b81c1e2ef03e7fe96548d539851decb3fe43869",
+      "android": "android_sdk-285551b3e5e5cd0c62a0b998ecd3686ab621dc22"
+    },
+    "production": {
+      "ios": "ios_sdk-bfd0e3e2e2a38ea81084ef37cff6baa7d5bd2427",
+      "android": "android_sdk-005a0084b74f24ffecb85e4bf4edb22b69a80250"
+    }
+  },
+  "intercomAppId": {
+    "staging": "em04z67z",
+    "preprod": "em04z67z",
+    "production": "zax5j442"
+  },
+  "brazeApiKey": {
+    "staging": {
+      "ios": "9f17da2b-76d3-4763-b80c-77cbb26790ab",
+      "android": "6b8a7a28-ab46-49dc-8c07-3ff9dca4b48f"
+    },
+    "preprod": {
+      "ios": "9f17da2b-76d3-4763-b80c-77cbb26790ab",
+      "android": "6b8a7a28-ab46-49dc-8c07-3ff9dca4b48f"
+    },
+    "production": {
+      "ios": "1d1cfca1-c31e-430a-b565-19bd4ad295ef",
+      "android": "d59efd09-e603-43e5-8de9-2eab99765c85"
+    }
+  },
+  "brazeEndpoint": {
+    "staging": "sdk.iad-07.braze.com",
+    "preprod": "sdk.iad-07.braze.com",
+    "production": "sdk.iad-07.braze.com"
+  },
+  "googlePayMerchantId": {
+    "staging": {
+      "android": "BCR2DN5TU2MLHXK3"
+    },
+    "preprod": {
+      "android": "BCR2DN5TU2MLHXK3"
+    },
+    "production": {
+      "android": "BCR2DN5TU2MLHXK3"
+    }
+  },
+  "placesSdkKey": {
+    "staging": {
+      "android": "AIzaSyDER-fSKM0dfdoA0twlY8G3Sn015AWAAKA"
+    },
+    "preprod": {
+      "android": "AIzaSyDER-fSKM0dfdoA0twlY8G3Sn015AWAAKA"
+    },
+    "production": {
+      "android": "AIzaSyDER-fSKM0dfdoA0twlY8G3Sn015AWAAKA"
+    }
+  },
+  "radarPublishableKey": {
+    "staging": "prj_test_pk_a0a560db48097635d15ebbf2932d7ff9442491c4",
+    "preprod": "prj_test_pk_a0a560db48097635d15ebbf2932d7ff9442491c4",
+    "production": "prj_live_pk_7c5757aebbeb7e96371e25b17efe4f351aa61396"
+  }
+}

@@ -1,0 +1,25 @@
+package skip.lib;
+
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: Add missing generic type declarations: [K] */
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+@Metadata(k = 3, mv = {2, 2, 0}, xi = 176)
+/* loaded from: classes4.dex */
+public final class KeyedDecodingContainer$decodeIfPresent$$inlined$decode$78<K> implements Function1<UnkeyedDecodingContainer, K> {
+    public static final KeyedDecodingContainer$decodeIfPresent$$inlined$decode$78 INSTANCE = new KeyedDecodingContainer$decodeIfPresent$$inlined$decode$78();
+
+    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final K invoke2(UnkeyedDecodingContainer unkeyedDecodingContainer) {
+        unkeyedDecodingContainer.getClass();
+        Intrinsics.h();
+        throw null;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Object invoke(UnkeyedDecodingContainer unkeyedDecodingContainer) {
+        return invoke2(unkeyedDecodingContainer);
+    }
+}

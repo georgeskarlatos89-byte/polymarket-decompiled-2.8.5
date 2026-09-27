@@ -1,0 +1,189 @@
+{
+  "event": {
+    "id": "qa-baseball-evt",
+    "category": "sports",
+    "slug": "qa-baseball-game",
+    "title": "New York Yankees vs. Baltimore Orioles",
+    "gameId": 77101,
+    "live": true,
+    "seriesSlug": "mlb",
+    "teams": [
+      {
+        "id": 3019,
+        "name": "New York Yankees",
+        "abbreviation": "nyy",
+        "displayAbbreviation": "NYY",
+        "safeName": "Yankees",
+        "league": "mlb",
+        "record": "2-3",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/new-york-yankees-light-316abe4069.png",
+        "colorPrimary": "#29568A"
+      },
+      {
+        "id": 3003,
+        "name": "Baltimore Orioles",
+        "abbreviation": "bal",
+        "displayAbbreviation": "BAL",
+        "safeName": "Orioles",
+        "league": "mlb",
+        "record": "2-3",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/baltimore-light-6cf91a51f0.png",
+        "colorPrimary": "#D94000"
+      }
+    ],
+    "eventState": {
+      "id": 771011,
+      "type": "baseball",
+      "live": true,
+      "ended": false,
+      "score": "2-2",
+      "period": "2",
+      "baseballState": {
+        "balls": 1,
+        "strikes": 2,
+        "outs": 1,
+        "onFirst": true,
+        "onSecond": true,
+        "onThird": false,
+        "inningHalf": "T"
+      }
+    },
+    "markets": [
+      {
+        "id": "qa-baseball-ml",
+        "question": "Who will win?",
+        "slug": "qa-baseball-ml",
+        "category": "sports",
+        "marketType": "moneyline",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-baseball-ml-long",
+            "long": true,
+            "price": "0.5",
+            "teamId": 3019
+          },
+          {
+            "id": "qa-baseball-ml-short",
+            "long": false,
+            "price": "0.5",
+            "teamId": 3003
+          }
+        ]
+      },
+      {
+        "id": "qa-baseball-spread",
+        "slug": "qa-baseball-spread",
+        "question": "Will the New York Yankees cover -1.5 vs the Baltimore Orioles?",
+        "title": "New York Yankees wins by over 1.5 runs",
+        "titleShort": "NYY -1.5",
+        "category": "sports",
+        "marketType": "spreads",
+        "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "line": -1.5,
+        "marketSides": [
+          {
+            "id": "qa-baseball-spread-long",
+            "description": "-1.50",
+            "long": true,
+            "price": "0.5",
+            "teamId": 3019
+          },
+          {
+            "id": "qa-baseball-spread-short",
+            "description": "+1.50",
+            "long": false,
+            "price": "0.5",
+            "teamId": 3003
+          }
+        ]
+      },
+      {
+        "id": "qa-baseball-total",
+        "slug": "qa-baseball-total",
+        "question": "Will the total in New York Yankees vs Baltimore Orioles be more than 8.5?",
+        "title": "Over 8.5 total runs",
+        "titleShort": "Over 8.5 runs",
+        "category": "sports",
+        "marketType": "totals",
+        "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "line": 8.5,
+        "marketSides": [
+          {
+            "id": "qa-baseball-total-long",
+            "description": "Over",
+            "long": true,
+            "price": "0.5"
+          },
+          {
+            "id": "qa-baseball-total-short",
+            "description": "Under",
+            "long": false,
+            "price": "0.5"
+          }
+        ]
+      }
+    ],
+    "marketGroups": [
+      {
+        "id": "PRIMARY",
+        "title": "Primary",
+        "order": 0,
+        "marketIds": [
+          "qa-baseball-ml"
+        ],
+        "initialCollapsed": false
+      },
+      {
+        "id": "game-lines",
+        "title": "Game Lines",
+        "order": 0,
+        "marketIds": []
+      },
+      {
+        "id": "game-lines/spread",
+        "title": "Spread",
+        "parentId": "game-lines",
+        "order": 0,
+        "marketIds": []
+      },
+      {
+        "id": "game-lines/spread/full-game",
+        "title": "Full Game",
+        "parentId": "game-lines/spread",
+        "order": 0,
+        "marketIds": [
+          "qa-baseball-spread"
+        ],
+        "line": -1.5,
+        "initialCollapsed": false
+      },
+      {
+        "id": "game-lines/totals",
+        "title": "Totals",
+        "parentId": "game-lines",
+        "order": 1,
+        "marketIds": []
+      },
+      {
+        "id": "game-lines/totals/full-game",
+        "title": "Full Game",
+        "parentId": "game-lines/totals",
+        "order": 0,
+        "marketIds": [
+          "qa-baseball-total"
+        ],
+        "line": 8.5,
+        "initialCollapsed": false
+      }
+    ]
+  }
+}

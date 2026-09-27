@@ -1,0 +1,26 @@
+{
+  "name": "nfl-live-markets",
+  "description": "A live QA NFL game carries a backend-flagged Live root (Next touchdown / Next field goal); the second detail fetch advances to the next touchdown family.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/slug/qa-nfl-live-game" },
+      "respond": [
+        { "status": 200, "fixture": "nfl-live-event-first-touchdown" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/qa-nfl-live-evt" },
+      "respond": [
+        { "status": 200, "fixture": "nfl-live-event-first-touchdown" },
+        { "status": 200, "fixture": "nfl-live-event-second-touchdown" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/v1/events", "query": { "slug": "qa-nfl-live-game" } },
+      "respond": [
+        { "status": 200, "fixture": "nfl-live-events-list" }
+      ]
+    }
+  ]
+}

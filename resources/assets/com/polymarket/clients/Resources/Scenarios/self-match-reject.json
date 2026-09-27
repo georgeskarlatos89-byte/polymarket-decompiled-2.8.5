@@ -1,0 +1,33 @@
+{
+  "name": "self-match-reject",
+  "description": "The first order placement is rejected for crossing the caller's own open order; the placement after cancelling fills. All other traffic is live.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": {
+        "method": "POST",
+        "path": "/v1/orders"
+      },
+      "respond": [
+        {
+          "status": 400,
+          "body": {
+            "code": 9,
+            "message": "This order would trade against your own open order. Cancel that order and try again.",
+            "details": [
+              {
+                "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+                "reason": "SELF_MATCH",
+                "domain": "orders"
+              }
+            ]
+          }
+        },
+        {
+          "status": 200,
+          "fixture": "self-match-retry-filled"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+package io.intercom.android.sdk.models;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import io.intercom.android.sdk.models.Avatar;
+import io.intercom.android.sdk.utilities.NullSafety;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes6.dex */
+public class EventParticipant implements Parcelable {
+    private final Avatar avatar;
+    private final String id;
+    private final String initial;
+    private final String label;
+    private final String type;
+    public static final EventParticipant NULL = new EventParticipant(new Builder());
+    public static final Parcelable.Creator<EventParticipant> CREATOR = new Parcelable.Creator<EventParticipant>() { // from class: io.intercom.android.sdk.models.EventParticipant.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public EventParticipant createFromParcel(Parcel parcel) {
+            return new EventParticipant(parcel);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public /* bridge */ /* synthetic */ EventParticipant[] newArray(int i) {
+            return newArray(i);
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public EventParticipant[] newArray(int i) {
+            return new EventParticipant[i];
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public /* bridge */ /* synthetic */ EventParticipant createFromParcel(Parcel parcel) {
+            return createFromParcel(parcel);
+        }
+    };
+
+    /* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+    /* loaded from: classes6.dex */
+    public static final class Builder {
+        Avatar.Builder avatar;
+        String id;
+        String initial;
+        String label;
+        String type;
+
+        public EventParticipant build() {
+            return new EventParticipant(this, null);
+        }
+    }
+
+    private EventParticipant(Builder builder) {
+        this.id = NullSafety.valueOrEmpty(builder.id);
+        this.initial = NullSafety.valueOrEmpty(builder.initial);
+        this.label = NullSafety.valueOrEmpty(builder.label);
+        this.type = NullSafety.valueOrEmpty(builder.type);
+        Avatar.Builder builder2 = builder.avatar;
+        this.avatar = (builder2 == null ? new Avatar.Builder() : builder2).build();
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public Avatar getAvatar() {
+        return this.avatar;
+    }
+
+    public String getId() {
+        return this.id;
+    }
+
+    public String getInitial() {
+        return this.initial;
+    }
+
+    public String getLabel() {
+        return this.label;
+    }
+
+    public String getType() {
+        return this.type;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(this.id);
+        parcel.writeString(this.initial);
+        parcel.writeString(this.label);
+        parcel.writeString(this.type);
+        parcel.writeValue(this.avatar);
+    }
+
+    public /* synthetic */ EventParticipant(Builder builder, AnonymousClass1 anonymousClass1) {
+        this(builder);
+    }
+
+    public EventParticipant(Parcel parcel) {
+        this.id = parcel.readString();
+        this.initial = parcel.readString();
+        this.label = parcel.readString();
+        this.type = parcel.readString();
+        this.avatar = (Avatar) parcel.readValue(Avatar.class.getClassLoader());
+    }
+}

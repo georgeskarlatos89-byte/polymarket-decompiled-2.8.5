@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M3.667,20.333H20.333"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.3333"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M12,9.667H19C19.736,9.667 20.333,9.069 20.333,8.333V7.781C20.333,7.299 20.072,6.853 19.652,6.617L12.652,2.697C12.247,2.471 11.753,2.471 11.349,2.697L4.348,6.619C3.927,6.855 3.667,7.3 3.667,7.783V8.335C3.667,9.071 4.264,9.668 5,9.668L12,9.667Z"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.3333"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M9.667,20.333V13"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.3333"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M5,20.333V13"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.3333"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M14.333,20.333V13"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.3333"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,20.333V13"
+        android:strokeColor="#000000"
+        android:strokeWidth="2.3333"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,7.667C12.736,7.667 13.333,7.07 13.333,6.333C13.333,5.597 12.736,5 12,5C11.264,5 10.667,5.597 10.667,6.333C10.667,7.07 11.264,7.667 12,7.667Z"/>
+</vector>

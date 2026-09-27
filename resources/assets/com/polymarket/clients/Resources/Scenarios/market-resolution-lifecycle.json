@@ -1,0 +1,29 @@
+{
+  "name": "market-resolution-lifecycle",
+  "description": "The QA game event advances trading -> resolving -> resolved on successive detail fetches; refresh to step through.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/slug/qa-resolution-game" },
+      "respond": [
+        { "status": 200, "fixture": "resolution-event-trading" },
+        { "status": 200, "fixture": "resolution-event-resolving" },
+        { "status": 200, "fixture": "resolution-event-resolved" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/v1/events", "query": { "slug": "qa-resolution-game" } },
+      "respond": [
+        { "status": 200, "fixture": "resolution-events-list-trading" },
+        { "status": 200, "fixture": "resolution-events-list-resolving" },
+        { "status": 200, "fixture": "resolution-events-list-resolved" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/v1/portfolio/positions" },
+      "respond": [
+        { "status": 200, "fixture": "resolution-positions" }
+      ]
+    }
+  ]
+}

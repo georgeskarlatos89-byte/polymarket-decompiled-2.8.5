@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>PolyBridge Test Harness</title>
+    <style>
+      :root { color-scheme: light dark; }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, sans-serif;
+        background: #fff;
+        color: #111;
+        height: var(--vvh, 100dvh);
+        overflow: hidden;
+      }
+      main {
+        display: block;
+        height: var(--vvh, 100dvh);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      @media (prefers-color-scheme: dark) {
+        html, body { background: #111; color: #eee; }
+        button, select, input[type="text"] { background: #222; color: #eee; border-color: #444; }
+        pre { background: #1a1a1a; color: #ddd; border-color: #333; }
+        .status.ok { color: #4ade80; }
+        .status.warn { color: #fbbf24; }
+      }
+      main {
+        padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+      }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      .status { font-size: 13px; margin-bottom: 16px; }
+      .status.ok { color: #15803d; }
+      .status.warn { color: #b45309; }
+      section { margin-bottom: 20px; }
+      section h2 { font-size: 14px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.7; }
+      .row { display: flex; flex-wrap: wrap; gap: 8px; }
+      button {
+        flex: 1 1 auto;
+        min-height: 44px;
+        padding: 10px 14px;
+        font-size: 15px;
+        background: #f5f5f5;
+        color: #111;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:active { opacity: 0.6; }
+      select, input[type="text"] {
+        flex: 1 1 auto;
+        min-height: 44px;
+        padding: 10px 14px;
+        font-size: 15px;
+        background: #f5f5f5;
+        color: #111;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      pre {
+        margin: 0;
+        padding: 10px;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 1.4;
+        max-height: 240px;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      .clear { font-size: 12px; opacity: 0.7; background: transparent; border: none; padding: 6px 0; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <main>
+    <h1>PolyBridge test harness</h1>
+    <div id="status" class="status">Detecting transport…</div>
+
+    <section>
+      <h2>PolyAppHost</h2>
+      <pre id="apphost">window.PolyAppHost not injected</pre>
+    </section>
+
+    <section>
+      <h2>haptics</h2>
+      <div class="row">
+        <select id="haptic-style">
+          <option value="success">success</option>
+          <option value="error">error</option>
+          <option value="warning">warning</option>
+          <option value="light">light</option>
+          <option value="soft">soft</option>
+          <option value="medium" selected>medium</option>
+          <option value="heavy">heavy</option>
+          <option value="rigid">rigid</option>
+          <option value="selection">selection</option>
+          <option value="doubleTap">doubleTap</option>
+          <option value="none">none</option>
+        </select>
+        <button id="haptic-fire">fire</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>open</h2>
+      <div class="row">
+        <button data-open="https://polymarket.com">polymarket.com (bridge open · modal)</button>
+        <button data-target-blank="https://example.com">example.com (target=_blank · browser)</button>
+        <button data-open="https://example.com/capture">capture (drawer)</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>close</h2>
+      <div class="row">
+        <button id="close-btn">close · status: cancel</button>
+        <button class="close-status" data-status="success">close · status: success</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>logEvent</h2>
+      <div class="row">
+        <select id="log-event">
+          <option value="webview_loaded">webview_loaded</option>
+          <option value="onboarding_step_viewed" data-meta='{"step":"intro"}'>onboarding_step_viewed</option>
+          <option value="onboarding_step_completed" data-meta='{"step":"docv","duration_ms":"12480"}' selected>onboarding_step_completed</option>
+          <option value="cta_clicked" data-meta='{"surface":"onboarding","cta":"continue"}'>cta_clicked</option>
+          <option value="form_field_focused" data-meta='{"field":"date_of_birth"}'>form_field_focused</option>
+          <option value="form_validation_failed" data-meta='{"field":"ssn","reason":"format_invalid"}'>form_validation_failed</option>
+          <option value="error_displayed" data-meta='{"code":"network_timeout","step":"submit_kyc"}'>error_displayed</option>
+        </select>
+        <button id="log-event-fire">fire</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>resetAuth</h2>
+      <div class="row">
+        <button id="reset-auth-btn">resetAuth</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>pageReady</h2>
+      <div class="row">
+        <button id="page-ready-btn">pageReady</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>requestPermission</h2>
+      <div class="row">
+        <select id="request-permission-kind">
+          <option value="notifications" selected>notifications</option>
+        </select>
+        <button id="request-permission-fire">fire</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>getDeviceAttestation</h2>
+      <div class="row">
+        <button id="get-device-attestation-fire">fire</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>features</h2>
+      <pre id="features">window.PolyBridge.features not available</pre>
+    </section>
+
+    <section>
+      <h2>onboarding.submitKycPrefillOtp</h2>
+      <div class="row">
+        <input id="submit-kyc-otp-code" type="text" inputmode="numeric" placeholder="otp (6 digits)" value="123456" />
+        <input id="submit-kyc-otp-external-id" type="text" placeholder="externalId" value="eval-test" />
+        <button id="submit-kyc-otp-fire">fire</button>
+        <button id="submit-kyc-otp-legacy">fire via deprecated v1 alias</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>onboarding.initiateOriginalEmailOtp</h2>
+      <div class="row">
+        <button id="initiate-original-email-otp-fire">fire</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>onboarding.submitOriginalEmailOtp</h2>
+      <div class="row">
+        <input id="submit-original-email-otp-code" type="text" inputmode="numeric" placeholder="otp" value="123456" />
+        <button id="submit-original-email-otp-fire">fire</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>log</h2>
+      <pre id="log"></pre>
+      <button class="clear" id="clear-btn">clear</button>
+    </section>
+    </main>
+
+    <script>
+      var logEl = document.getElementById('log');
+      function log(line) {
+        var ts = new Date().toISOString().slice(11, 23);
+        logEl.textContent = '[' + ts + '] ' + line + '\n' + logEl.textContent;
+      }
+
+      var statusEl = document.getElementById('status');
+      function detectTransport() {
+        var webkitHandlers = window.webkit && window.webkit.messageHandlers;
+        var iosNotify = !!(webkitHandlers && webkitHandlers.polyJsBridge);
+        var iosWithReply = !!(webkitHandlers && webkitHandlers.polyJsBridgeWithReply);
+        if (iosNotify || iosWithReply) {
+          var parts = [];
+          if (iosNotify) parts.push('notify');
+          if (iosWithReply) parts.push('withReply');
+          return 'iOS WKWebView (' + parts.join('+') + ')';
+        }
+        var androidNotify = window.polyJsBridge && typeof window.polyJsBridge.postMessage === 'function';
+        var androidWithReply = window.polyJsBridgeWithReply && typeof window.polyJsBridgeWithReply.postMessage === 'function';
+        if (androidNotify || androidWithReply) {
+          var aparts = [];
+          if (androidNotify) aparts.push('notify');
+          if (androidWithReply) aparts.push('withReply');
+          return 'Android JavascriptInterface (' + aparts.join('+') + ')';
+        }
+        return null;
+      }
+      function refreshStatus() {
+        var transport = detectTransport();
+        if (window.PolyBridge && transport) {
+          statusEl.className = 'status ok';
+          statusEl.textContent = 'PolyBridge ready · ' + transport;
+        } else if (window.PolyBridge) {
+          statusEl.className = 'status warn';
+          statusEl.textContent = 'PolyBridge present but no native transport detected';
+        } else {
+          statusEl.className = 'status warn';
+          statusEl.textContent = 'window.PolyBridge not injected';
+        }
+      }
+      refreshStatus();
+
+      var apphostEl = document.getElementById('apphost');
+      if (window.PolyAppHost) {
+        var preview = Object.assign({}, window.PolyAppHost);
+        if (typeof preview.auth_grant === 'string' && preview.auth_grant.length > 16) {
+          preview.auth_grant = preview.auth_grant.slice(0, 8) + '…' + preview.auth_grant.slice(-4)
+            + ' (' + preview.auth_grant.length + ' chars)';
+        }
+        apphostEl.textContent = JSON.stringify(preview, null, 2);
+      }
+
+      document.getElementById('haptic-fire').addEventListener('click', function () {
+        var style = document.getElementById('haptic-style').value;
+        log('PolyBridge.v1.haptics(' + JSON.stringify(style) + ')');
+        window.PolyBridge && window.PolyBridge.v1.haptics(style);
+      });
+
+      document.querySelectorAll('button[data-open]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var url = btn.dataset.open;
+          log('PolyBridge.v1.open(' + JSON.stringify(url) + ')');
+          window.PolyBridge && window.PolyBridge.v1.open(url);
+        });
+      });
+
+      document.querySelectorAll('button[data-target-blank]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var url = btn.dataset.targetBlank;
+          log('window.open(' + JSON.stringify(url) + ', "_blank")');
+          window.open(url, '_blank', 'noopener,noreferrer');
+        });
+      });
+
+      document.getElementById('close-btn').addEventListener('click', function () {
+        var meta = { status: 'cancel' };
+        log('PolyBridge.v1.close(' + JSON.stringify(meta) + ')');
+        window.PolyBridge && window.PolyBridge.v1.close(meta);
+      });
+
+      document.querySelectorAll('button.close-status').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var meta = { status: btn.dataset.status };
+          log('PolyBridge.v1.close(' + JSON.stringify(meta) + ')');
+          window.PolyBridge && window.PolyBridge.v1.close(meta);
+        });
+      });
+
+      document.getElementById('log-event-fire').addEventListener('click', function () {
+        var select = document.getElementById('log-event');
+        var option = select.options[select.selectedIndex];
+        var eventName = option.value;
+        var meta = option.dataset.meta ? JSON.parse(option.dataset.meta) : undefined;
+        log('PolyBridge.v1.logEvent(' + JSON.stringify(eventName) + (meta ? ', ' + JSON.stringify(meta) : '') + ')');
+        window.PolyBridge && window.PolyBridge.v1.logEvent(eventName, meta);
+      });
+
+      document.getElementById('reset-auth-btn').addEventListener('click', function () {
+        log('PolyBridge.v1.resetAuth()');
+        window.PolyBridge && window.PolyBridge.v1.resetAuth();
+      });
+
+      document.getElementById('page-ready-btn').addEventListener('click', function () {
+        log('PolyBridge.v1.pageReady()');
+        window.PolyBridge && window.PolyBridge.v1.pageReady();
+      });
+
+      document.getElementById('request-permission-fire').addEventListener('click', function () {
+        var kind = document.getElementById('request-permission-kind').value;
+        log('PolyBridge.v1.requestPermission(' + JSON.stringify(kind) + ')');
+        if (!window.PolyBridge) return;
+        window.PolyBridge.v1.requestPermission(kind).then(
+          function (status) {
+            log('  → ' + JSON.stringify(status));
+          },
+          function (error) {
+            log('  ✗ ' + (error && error.message ? error.message : String(error)));
+          }
+        );
+      });
+
+      document.getElementById('get-device-attestation-fire').addEventListener('click', function () {
+        log('PolyBridge.v1.getDeviceAttestation()');
+        if (!window.PolyBridge) return;
+        window.PolyBridge.v1.getDeviceAttestation().then(
+          function (token) {
+            log('  → ' + JSON.stringify(token));
+          },
+          function (error) {
+            log('  ✗ ' + (error && error.message ? error.message : String(error)));
+          }
+        );
+      });
+
+      var featuresEl = document.getElementById('features');
+      if (window.PolyBridge && window.PolyBridge.features) {
+        var summary = {};
+        Object.keys(window.PolyBridge.features).forEach(function (id) {
+          var ns = window.PolyBridge.features[id];
+          summary[id] = { version: ns.version, methods: Object.keys(ns).filter(function (k) { return k !== 'version'; }) };
+        });
+        featuresEl.textContent = JSON.stringify(summary, null, 2);
+      }
+
+      function logReply(promise) {
+        promise.then(
+          function (reply) {
+            log('  → ' + JSON.stringify(reply));
+          },
+          function (error) {
+            log('  ✗ ' + (error && error.message ? error.message : String(error)));
+          }
+        );
+      }
+
+      function onboarding() {
+        var ns = window.PolyBridge && window.PolyBridge.features && window.PolyBridge.features.onboarding;
+        if (!ns) log('  ✗ PolyBridge.features.onboarding is not installed on this host');
+        return ns;
+      }
+
+      document.getElementById('submit-kyc-otp-fire').addEventListener('click', function () {
+        var data = {
+          otp: document.getElementById('submit-kyc-otp-code').value,
+          externalId: document.getElementById('submit-kyc-otp-external-id').value,
+        };
+        log('PolyBridge.features.onboarding.submitKycPrefillOtp(' + JSON.stringify(data) + ')');
+        var ns = onboarding();
+        if (ns) logReply(ns.submitKycPrefillOtp(data));
+      });
+
+      document.getElementById('submit-kyc-otp-legacy').addEventListener('click', function () {
+        var otp = document.getElementById('submit-kyc-otp-code').value;
+        var externalId = document.getElementById('submit-kyc-otp-external-id').value;
+        log('PolyBridge.v1.submitKycPrefillOtp(' + JSON.stringify(otp) + ', ' + JSON.stringify(externalId) + ')  [deprecated alias]');
+        if (!window.PolyBridge) return;
+        logReply(window.PolyBridge.v1.submitKycPrefillOtp(otp, externalId));
+      });
+
+      document.getElementById('initiate-original-email-otp-fire').addEventListener('click', function () {
+        log('PolyBridge.features.onboarding.initiateOriginalEmailOtp()');
+        var ns = onboarding();
+        if (ns) logReply(ns.initiateOriginalEmailOtp());
+      });
+
+      document.getElementById('submit-original-email-otp-fire').addEventListener('click', function () {
+        var data = { otp: document.getElementById('submit-original-email-otp-code').value };
+        log('PolyBridge.features.onboarding.submitOriginalEmailOtp(' + JSON.stringify(data) + ')');
+        var ns = onboarding();
+        if (ns) logReply(ns.submitOriginalEmailOtp(data));
+      });
+
+      document.getElementById('clear-btn').addEventListener('click', function () {
+        logEl.textContent = '';
+      });
+    </script>
+  </body>
+</html>

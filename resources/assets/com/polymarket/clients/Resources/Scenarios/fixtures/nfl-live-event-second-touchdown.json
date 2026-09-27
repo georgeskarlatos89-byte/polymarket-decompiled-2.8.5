@@ -1,0 +1,299 @@
+{
+  "event": {
+    "id": "qa-nfl-live-evt",
+    "category": "sports",
+    "slug": "qa-nfl-live-game",
+    "title": "QA Bills vs QA Chiefs",
+    "gameId": 88001,
+    "live": true,
+    "teams": [
+      {
+        "id": 8801,
+        "name": "QA Bills",
+        "abbreviation": "QAB",
+        "safeName": "Buffalo",
+        "league": "nfl"
+      },
+      {
+        "id": 8802,
+        "name": "QA Chiefs",
+        "abbreviation": "QAC",
+        "safeName": "Kansas City",
+        "league": "nfl"
+      }
+    ],
+    "markets": [
+      {
+        "id": "qa-nfl-live-ml",
+        "question": "Who wins?",
+        "slug": "qa-nfl-live-ml",
+        "category": "sports",
+        "marketType": "moneyline",
+        "sportsMarketType": "football_team_full_game_winner",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-ml-long",
+            "long": true,
+            "price": "0.55",
+            "teamId": 8801
+          },
+          {
+            "id": "qa-nfl-live-ml-short",
+            "long": false,
+            "price": "0.45",
+            "teamId": 8802
+          }
+        ]
+      },
+      {
+        "id": "qa-nfl-live-td2-away",
+        "question": "2nd Touchdown Scoring Team: Buffalo",
+        "title": "Buffalo",
+        "slug": "qa-nfl-live-td2-away",
+        "category": "sports",
+        "marketType": "props",
+        "sportsMarketType": "football_next_team_touchdown",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-td2-away-long",
+            "long": true,
+            "price": "0.51",
+            "teamId": 8801
+          },
+          {
+            "id": "qa-nfl-live-td2-away-short",
+            "long": false,
+            "price": "0.49",
+            "teamId": 8801
+          }
+        ]
+      },
+      {
+        "id": "qa-nfl-live-td2-home",
+        "question": "2nd Touchdown Scoring Team: Kansas City",
+        "title": "Kansas City",
+        "slug": "qa-nfl-live-td2-home",
+        "category": "sports",
+        "marketType": "props",
+        "sportsMarketType": "football_next_team_touchdown",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-td2-home-long",
+            "long": true,
+            "price": "0.41",
+            "teamId": 8802
+          },
+          {
+            "id": "qa-nfl-live-td2-home-short",
+            "long": false,
+            "price": "0.59",
+            "teamId": 8802
+          }
+        ]
+      },
+      {
+        "id": "qa-nfl-live-td2-none",
+        "question": "2nd Touchdown Scoring Team: No touchdown",
+        "title": "No touchdown",
+        "slug": "qa-nfl-live-td2-none",
+        "category": "sports",
+        "marketType": "props",
+        "sportsMarketType": "football_next_team_touchdown",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-td2-none-long",
+            "long": true,
+            "price": "0.08"
+          },
+          {
+            "id": "qa-nfl-live-td2-none-short",
+            "long": false,
+            "price": "0.92"
+          }
+        ]
+      },
+      {
+        "id": "qa-nfl-live-fg1-away",
+        "question": "1st Field Goal Scoring Team: Buffalo",
+        "title": "Buffalo",
+        "slug": "qa-nfl-live-fg1-away",
+        "category": "sports",
+        "marketType": "props",
+        "sportsMarketType": "football_next_team_field_goal",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-fg1-away-long",
+            "long": true,
+            "price": "0.40",
+            "teamId": 8801
+          },
+          {
+            "id": "qa-nfl-live-fg1-away-short",
+            "long": false,
+            "price": "0.60",
+            "teamId": 8801
+          }
+        ]
+      },
+      {
+        "id": "qa-nfl-live-fg1-home",
+        "question": "1st Field Goal Scoring Team: Kansas City",
+        "title": "Kansas City",
+        "slug": "qa-nfl-live-fg1-home",
+        "category": "sports",
+        "marketType": "props",
+        "sportsMarketType": "football_next_team_field_goal",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-fg1-home-long",
+            "long": true,
+            "price": "0.42",
+            "teamId": 8802
+          },
+          {
+            "id": "qa-nfl-live-fg1-home-short",
+            "long": false,
+            "price": "0.58",
+            "teamId": 8802
+          }
+        ]
+      },
+      {
+        "id": "qa-nfl-live-fg1-none",
+        "question": "1st Field Goal Scoring Team: No field goal",
+        "title": "No field goal",
+        "slug": "qa-nfl-live-fg1-none",
+        "category": "sports",
+        "marketType": "props",
+        "sportsMarketType": "football_next_team_field_goal",
+        "active": true,
+        "closed": false,
+        "status": "MARKET_STATUS_OPEN",
+        "marketSides": [
+          {
+            "id": "qa-nfl-live-fg1-none-long",
+            "long": true,
+            "price": "0.18"
+          },
+          {
+            "id": "qa-nfl-live-fg1-none-short",
+            "long": false,
+            "price": "0.82"
+          }
+        ]
+      }
+    ],
+    "marketGroups": [
+      {
+        "id": "PRIMARY",
+        "title": "Primary",
+        "order": 0,
+        "marketIds": [
+          "qa-nfl-live-ml"
+        ],
+        "initialCollapsed": false,
+        "live": false
+      },
+      {
+        "id": "game-lines",
+        "title": "Game Lines",
+        "order": 0,
+        "marketIds": [],
+        "initialCollapsed": false,
+        "live": false
+      },
+      {
+        "id": "game-lines/moneyline",
+        "title": "Moneyline",
+        "parentId": "game-lines",
+        "order": 0,
+        "marketIds": [],
+        "initialCollapsed": false,
+        "live": false
+      },
+      {
+        "id": "game-lines/moneyline/full-game",
+        "title": "Full Game",
+        "parentId": "game-lines/moneyline",
+        "order": 0,
+        "marketIds": [
+          "qa-nfl-live-ml"
+        ],
+        "initialCollapsed": false,
+        "live": false
+      },
+      {
+        "id": "live",
+        "title": "Live",
+        "order": 2,
+        "live": true,
+        "marketIds": [],
+        "initialCollapsed": false
+      },
+      {
+        "id": "live/next-touchdown",
+        "title": "Next touchdown",
+        "subtitle": "Resets after any TD",
+        "parentId": "live",
+        "order": 0,
+        "marketIds": [],
+        "initialCollapsed": false,
+        "live": false
+      },
+      {
+        "id": "live/next-touchdown/2nd-touchdown",
+        "title": "2nd Touchdown",
+        "parentId": "live/next-touchdown",
+        "order": 0,
+        "marketIds": [
+          "qa-nfl-live-td2-away",
+          "qa-nfl-live-td2-home",
+          "qa-nfl-live-td2-none"
+        ],
+        "initialCollapsed": false,
+        "live": false
+      },
+      {
+        "id": "live/next-field-goal",
+        "title": "Next field goal",
+        "subtitle": "Resets after any FG",
+        "parentId": "live",
+        "order": 1,
+        "marketIds": [],
+        "initialCollapsed": true,
+        "live": false
+      },
+      {
+        "id": "live/next-field-goal/1st-field-goal",
+        "title": "1st Field Goal",
+        "parentId": "live/next-field-goal",
+        "order": 0,
+        "marketIds": [
+          "qa-nfl-live-fg1-away",
+          "qa-nfl-live-fg1-home",
+          "qa-nfl-live-fg1-none"
+        ],
+        "initialCollapsed": false,
+        "live": false
+      }
+    ]
+  }
+}

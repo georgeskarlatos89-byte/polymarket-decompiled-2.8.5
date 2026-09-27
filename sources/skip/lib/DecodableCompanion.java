@@ -1,0 +1,11 @@
+package skip.lib;
+
+import io.intercom.android.sdk.m5.navigation.TicketDetailDestinationKt;
+import kotlin.Metadata;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002J\u0015\u0010\u0003\u001a\u00028\u00002\u0006\u0010\u0004\u001a\u00020\u0005H&¢\u0006\u0002\u0010\u0006¨\u0006\u0007À\u0006\u0003"}, d2 = {"Lskip/lib/DecodableCompanion;", "Owner", "", "init", TicketDetailDestinationKt.LAUNCHED_FROM, "Lskip/lib/Decoder;", "(Lskip/lib/Decoder;)Ljava/lang/Object;", "SkipLib"}, k = 1, mv = {2, 2, 0}, xi = 48)
+/* loaded from: classes4.dex */
+public interface DecodableCompanion<Owner> {
+    Owner init(Decoder from);
+}

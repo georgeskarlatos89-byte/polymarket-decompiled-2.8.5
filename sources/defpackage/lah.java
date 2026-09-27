@@ -1,0 +1,9 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes.dex */
+public abstract class lah {
+    public static final m1h a = m1h.CornerFull;
+    public static final float b = 8.0f;
+    public static final float c = 24.0f;
+}

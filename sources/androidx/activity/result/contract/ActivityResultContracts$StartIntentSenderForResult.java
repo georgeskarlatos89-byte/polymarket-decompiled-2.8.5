@@ -1,0 +1,28 @@
+package androidx.activity.result.contract;
+
+import android.content.Context;
+import android.content.Intent;
+import defpackage.ca;
+import defpackage.ga;
+import defpackage.z3a;
+import io.radar.sdk.RadarTrackingOptions;
+import kotlin.Metadata;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+@Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001¨\u0006\u0004"}, d2 = {"androidx/activity/result/contract/ActivityResultContracts$StartIntentSenderForResult", "Lga;", "Lz3a;", "Lca;", RadarTrackingOptions.RadarTrackingOptionsForegroundService.KEY_FOREGROUND_SERVICE_ACTIVITY}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class ActivityResultContracts$StartIntentSenderForResult extends ga {
+    @Override // defpackage.ga
+    public final Intent createIntent(Context context, Object obj) {
+        z3a z3aVar = (z3a) obj;
+        z3aVar.getClass();
+        Intent putExtra = new Intent("androidx.activity.result.contract.action.INTENT_SENDER_REQUEST").putExtra("androidx.activity.result.contract.extra.INTENT_SENDER_REQUEST", z3aVar);
+        putExtra.getClass();
+        return putExtra;
+    }
+
+    @Override // defpackage.ga
+    public final Object parseResult(int i, Intent intent) {
+        return new ca(i, intent);
+    }
+}

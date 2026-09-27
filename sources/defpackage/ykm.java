@@ -1,0 +1,16 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+public final class ykm {
+    public int a;
+    public long b;
+    public Object c;
+    public final cqm d;
+    public int e;
+
+    public ykm(cqm cqmVar) {
+        cqmVar.getClass();
+        this.d = cqmVar;
+    }
+}

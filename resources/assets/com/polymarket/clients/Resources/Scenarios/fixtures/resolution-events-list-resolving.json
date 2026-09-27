@@ -1,0 +1,50 @@
+{
+  "events": [
+    {
+      "id": "qa-resolution-evt",
+      "category": "sports",
+      "slug": "qa-resolution-game",
+      "title": "QA Falcons vs QA Comets",
+      "teams": [
+        {
+          "id": 9001,
+          "name": "QA Falcons",
+          "abbreviation": "QAF",
+          "league": "nba"
+        },
+        {
+          "id": 9002,
+          "name": "QA Comets",
+          "abbreviation": "QAC",
+          "league": "nba"
+        }
+      ],
+      "markets": [
+        {
+          "id": "qa-resolution-ml",
+          "question": "Who wins?",
+          "slug": "qa-resolution-ml",
+          "category": "sports",
+          "marketType": "moneyline",
+          "active": true,
+          "closed": false,
+          "status": "MARKET_STATUS_RESOLVING",
+          "marketSides": [
+            {
+              "id": "qa-resolution-ml-long",
+              "long": true,
+              "price": "0.99",
+              "teamId": 9001
+            },
+            {
+              "id": "qa-resolution-ml-short",
+              "long": false,
+              "price": "0.01",
+              "teamId": 9002
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

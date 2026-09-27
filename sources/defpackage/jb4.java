@@ -1,0 +1,95 @@
+package defpackage;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes6.dex */
+public abstract class jb4 {
+    public static final long A;
+    public static final long B;
+    public static final long C;
+    public static final long D;
+    public static final long E;
+    public static final long F;
+    public static final long G;
+    public static final long H;
+    public static final long I;
+    public static final long J;
+    public static final long K;
+    public static final long L;
+    public static final long a;
+    public static final long b;
+    public static final long c;
+    public static final long d;
+    public static final long e;
+    public static final long f;
+    public static final long g;
+    public static final long h;
+    public static final long i;
+    public static final long j;
+    public static final long k;
+    public static final long l;
+    public static final long m;
+    public static final long n;
+    public static final long o;
+    public static final long p;
+    public static final long q;
+    public static final long r;
+    public static final long s;
+    public static final long t;
+    public static final long u;
+    public static final long v;
+    public static final long w;
+    public static final long x;
+    public static final long y;
+    public static final long z;
+
+    static {
+        long j2 = std.p;
+        a = std.d;
+        b = std.l;
+        c = std.F;
+        d = std.r;
+        e = std.c;
+        f = std.f;
+        long j3 = std.H;
+        g = j3;
+        h = std.C;
+        long j4 = std.E;
+        i = j4;
+        j = std.K;
+        long j5 = std.O;
+        k = j5;
+        l = std.I;
+        long j6 = std.L;
+        m = j6;
+        n = std.R;
+        long j7 = std.V;
+        o = j7;
+        p = std.P;
+        long j8 = std.S;
+        q = j8;
+        r = std.z;
+        s = std.x;
+        long j9 = std.G;
+        t = j4;
+        u = j3;
+        v = j9;
+        w = std.g;
+        long j10 = std.N;
+        x = j10;
+        y = j6;
+        z = j5;
+        A = j10;
+        B = std.n;
+        C = std.j;
+        D = std.k;
+        E = std.m;
+        F = std.h;
+        G = std.o;
+        H = j2;
+        long j11 = std.U;
+        I = j11;
+        J = j8;
+        K = j7;
+        L = j11;
+    }
+}

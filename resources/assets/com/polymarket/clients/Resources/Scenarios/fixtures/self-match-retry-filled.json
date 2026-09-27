@@ -1,0 +1,181 @@
+{
+  "id": "CG2NAK897BZP",
+  "executions": [
+    {
+      "id": "CGYW3BNZZBAK",
+      "order": {
+        "id": "CG2NAK897BZP",
+        "marketSlug": "aec-nfl-det-buf-2026-09-17",
+        "side": "ORDER_SIDE_SELL",
+        "type": "ORDER_TYPE_LIMIT",
+        "price": {
+          "value": "0.22",
+          "currency": "USD"
+        },
+        "quantity": 1.25,
+        "cumQuantity": 0,
+        "leavesQuantity": 1.25,
+        "tif": "TIME_IN_FORCE_DAY",
+        "goodTillTime": null,
+        "intent": "ORDER_INTENT_BUY_SHORT",
+        "marketMetadata": {
+          "slug": "aec-nfl-det-buf-2026-09-17",
+          "icon": "",
+          "title": "Detroit vs. Buffalo",
+          "outcome": "Bills",
+          "eventSlug": "nfl-det-buf-2026-09-17",
+          "teamId": 51,
+          "team": {
+            "id": 51,
+            "name": "Buffalo Bills",
+            "abbreviation": "buf",
+            "league": "nfl",
+            "record": "1-0",
+            "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/BUF.png",
+            "alias": "Bills",
+            "safeName": "Buffalo",
+            "colorPrimary": "#00338d",
+            "displayAbbreviation": "BUF",
+            "color": {
+              "light": "#00338d",
+              "dark": "#00338d"
+            }
+          },
+          "eventId": "100859"
+        },
+        "state": "ORDER_STATE_NEW",
+        "commissionNotionalTotalCollected": {
+          "value": "0.0000",
+          "currency": "USD"
+        },
+        "commissionsBasisPoints": "0",
+        "makerCommissionsBasisPoints": "0",
+        "avgPx": {
+          "value": "0.0000",
+          "currency": "USD"
+        },
+        "cashOrderQty": {
+          "value": "0.9768",
+          "currency": "USD"
+        },
+        "insertTime": "2026-09-15T21:16:42.547058194Z",
+        "createTime": "2026-09-15T21:16:42.543310952Z",
+        "outcomeSide": "OUTCOME_SIDE_NO",
+        "action": "ORDER_ACTION_BUY",
+        "manualOrderIndicator": "MANUAL_ORDER_INDICATOR_MANUAL",
+        "lastTransactTime": "2026-09-15T21:16:42.547058194Z"
+      },
+      "lastShares": "0.0000",
+      "lastPx": {
+        "value": "0.0000",
+        "currency": "USD"
+      },
+      "type": "EXECUTION_TYPE_NEW",
+      "text": "",
+      "orderRejectReason": "ORD_REJECT_REASON_EXCHANGE_OPTION",
+      "transactTime": "2026-09-15T21:16:42.547058194Z",
+      "legPrices": [],
+      "tradeId": "",
+      "aggressor": false,
+      "commissionNotionalCollected": {
+        "value": "0.0000",
+        "currency": "USD"
+      },
+      "unsolicitedCancelReason": "UNSOLICITED_CXL_REASON_UNDEFINED",
+      "traceId": "",
+      "commissionSpreadPx": {
+        "value": "0.0000",
+        "currency": "USD"
+      },
+      "transactTradeDate": "2026-09-16T00:00:00Z"
+    },
+    {
+      "id": "CGYW3BP03BAK",
+      "order": {
+        "id": "CG2NAK897BZP",
+        "marketSlug": "aec-nfl-det-buf-2026-09-17",
+        "side": "ORDER_SIDE_SELL",
+        "type": "ORDER_TYPE_LIMIT",
+        "price": {
+          "value": "0.22",
+          "currency": "USD"
+        },
+        "quantity": 1.25,
+        "cumQuantity": 1.25,
+        "leavesQuantity": 0,
+        "tif": "TIME_IN_FORCE_DAY",
+        "goodTillTime": null,
+        "intent": "ORDER_INTENT_BUY_SHORT",
+        "marketMetadata": {
+          "slug": "aec-nfl-det-buf-2026-09-17",
+          "icon": "",
+          "title": "Detroit vs. Buffalo",
+          "outcome": "Bills",
+          "eventSlug": "nfl-det-buf-2026-09-17",
+          "teamId": 51,
+          "team": {
+            "id": 51,
+            "name": "Buffalo Bills",
+            "abbreviation": "buf",
+            "league": "nfl",
+            "record": "1-0",
+            "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/BUF.png",
+            "alias": "Bills",
+            "safeName": "Buffalo",
+            "colorPrimary": "#00338d",
+            "displayAbbreviation": "BUF",
+            "color": {
+              "light": "#00338d",
+              "dark": "#00338d"
+            }
+          },
+          "eventId": "100859"
+        },
+        "state": "ORDER_STATE_FILLED",
+        "commissionNotionalTotalCollected": {
+          "value": "0.0100",
+          "currency": "USD"
+        },
+        "commissionsBasisPoints": "0",
+        "makerCommissionsBasisPoints": "0",
+        "avgPx": {
+          "value": "0.2200",
+          "currency": "USD"
+        },
+        "cashOrderQty": {
+          "value": "0.9768",
+          "currency": "USD"
+        },
+        "insertTime": "2026-09-15T21:16:42.547058194Z",
+        "createTime": "2026-09-15T21:16:42.543310952Z",
+        "outcomeSide": "OUTCOME_SIDE_NO",
+        "action": "ORDER_ACTION_BUY",
+        "manualOrderIndicator": "MANUAL_ORDER_INDICATOR_MANUAL",
+        "lastTransactTime": "2026-09-15T21:16:42.547058194Z"
+      },
+      "lastShares": "1.2500",
+      "lastPx": {
+        "value": "0.2200",
+        "currency": "USD"
+      },
+      "type": "EXECUTION_TYPE_FILL",
+      "text": "",
+      "orderRejectReason": "ORD_REJECT_REASON_EXCHANGE_OPTION",
+      "transactTime": "2026-09-15T21:16:42.547058194Z",
+      "legPrices": [],
+      "tradeId": "CGYW3BP01BAK",
+      "aggressor": true,
+      "commissionNotionalCollected": {
+        "value": "0.0100",
+        "currency": "USD"
+      },
+      "unsolicitedCancelReason": "UNSOLICITED_CXL_REASON_UNDEFINED",
+      "traceId": "",
+      "commissionSpreadPx": {
+        "value": "0.7800",
+        "currency": "USD"
+      },
+      "transactTradeDate": "2026-09-16T00:00:00Z"
+    }
+  ]
+}

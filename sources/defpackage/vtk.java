@@ -1,0 +1,93 @@
+package defpackage;
+
+import java.util.Iterator;
+import java.util.Set;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes3.dex */
+public final class vtk extends otk implements Set {
+    public static final Object[] j;
+    public static final vtk k;
+    public transient utk g;
+    public final transient Object[] h;
+    public final transient Object[] i;
+
+    static {
+        Object[] objArr = new Object[0];
+        j = objArr;
+        k = new vtk(objArr, objArr);
+    }
+
+    public vtk(Object[] objArr, Object[] objArr2) {
+        super(0);
+        this.h = objArr;
+        this.i = objArr2;
+    }
+
+    @Override // defpackage.otk
+    public final int a(Object[] objArr) {
+        System.arraycopy(this.h, 0, objArr, 0, 0);
+        return 0;
+    }
+
+    @Override // defpackage.otk
+    public final int b() {
+        return 0;
+    }
+
+    @Override // defpackage.otk
+    public final int c() {
+        return 0;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final boolean contains(Object obj) {
+        return false;
+    }
+
+    @Override // defpackage.otk
+    public final Object[] d() {
+        return this.h;
+    }
+
+    @Override // java.util.Collection, java.util.Set
+    public final boolean equals(Object obj) {
+        if (obj == this || obj == this) {
+            return true;
+        }
+        if (obj instanceof Set) {
+            Set set = (Set) obj;
+            try {
+                if (set.size() == 0) {
+                    if (containsAll(set)) {
+                        return true;
+                    }
+                    return false;
+                }
+            } catch (ClassCastException | NullPointerException unused) {
+            }
+        }
+        return false;
+    }
+
+    @Override // java.util.Collection, java.util.Set
+    public final int hashCode() {
+        return 0;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public final Iterator iterator() {
+        utk utkVar = this.g;
+        if (utkVar == null) {
+            qtk qtkVar = ttk.g;
+            utkVar = utk.i;
+            this.g = utkVar;
+        }
+        return utkVar.s(0);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public final int size() {
+        return 0;
+    }
+}

@@ -1,0 +1,889 @@
+package io.intercom.android.sdk;
+
+/* loaded from: classes6.dex */
+public final class R {
+
+    /* loaded from: classes6.dex */
+    public static final class anim {
+        public static int intercom_donothing = 0x7f01001e;
+        public static int intercom_fade_in = 0x7f01001f;
+        public static int intercom_fade_out = 0x7f010020;
+        public static int intercom_slide_in_bottom = 0x7f010021;
+
+        private anim() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class attr {
+        public static int activeStateSize = 0x7f040028;
+        public static int avatarSize = 0x7f040055;
+        public static int intercomCanExpand = 0x7f0402e5;
+        public static int intercomExpanded = 0x7f0402e6;
+        public static int intercomHeightLimit = 0x7f0402e7;
+        public static int intercomInterceptTouch = 0x7f0402e8;
+
+        private attr() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class color {
+        public static int intercom_accessibility_black = 0x7f06018b;
+        public static int intercom_accessibility_grey = 0x7f06018c;
+        public static int intercom_active_state = 0x7f06018d;
+        public static int intercom_attribute_collector_error = 0x7f06018e;
+        public static int intercom_attribute_input_hint = 0x7f06018f;
+        public static int intercom_away_state = 0x7f060190;
+        public static int intercom_black = 0x7f060191;
+        public static int intercom_black_40 = 0x7f060192;
+        public static int intercom_border_color = 0x7f060193;
+        public static int intercom_carousel_grey = 0x7f060194;
+        public static int intercom_container_border = 0x7f060195;
+        public static int intercom_conversation_rating_text = 0x7f060196;
+        public static int intercom_error_state_title = 0x7f060197;
+        public static int intercom_full_transparent_full_black = 0x7f060198;
+        public static int intercom_full_transparent_full_white = 0x7f060199;
+        public static int intercom_grey_200 = 0x7f06019a;
+        public static int intercom_grey_500 = 0x7f06019b;
+        public static int intercom_grey_600 = 0x7f06019c;
+        public static int intercom_grey_700 = 0x7f06019d;
+        public static int intercom_grey_800 = 0x7f06019e;
+        public static int intercom_help_center_grey = 0x7f06019f;
+        public static int intercom_image_preview_grey = 0x7f0601a0;
+        public static int intercom_inbox_count_background = 0x7f0601a1;
+        public static int intercom_main_blue = 0x7f0601a2;
+        public static int intercom_note_tint = 0x7f0601a3;
+        public static int intercom_ripple_light = 0x7f0601a4;
+        public static int intercom_semi_transparent = 0x7f0601a5;
+        public static int intercom_semi_transparent_white = 0x7f0601a6;
+        public static int intercom_slate_grey_two = 0x7f0601a7;
+        public static int intercom_transparent_black_lightbox = 0x7f0601a8;
+        public static int intercom_transparent_white = 0x7f0601a9;
+        public static int intercom_white = 0x7f0601aa;
+
+        private color() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class dimen {
+        public static int intercom_app_bar_shadow_height = 0x7f070121;
+        public static int intercom_avatar_size = 0x7f070122;
+        public static int intercom_bottom_padding = 0x7f070123;
+        public static int intercom_carousel_action_button_bottom_padding = 0x7f070124;
+        public static int intercom_carousel_action_button_radius = 0x7f070125;
+        public static int intercom_carousel_close_container = 0x7f070126;
+        public static int intercom_carousel_padding = 0x7f070127;
+        public static int intercom_cell_content_padding = 0x7f070128;
+        public static int intercom_cell_horizontal_padding = 0x7f070129;
+        public static int intercom_cell_padding_bottom = 0x7f07012a;
+        public static int intercom_cell_padding_top = 0x7f07012b;
+        public static int intercom_chat_full_top_margin = 0x7f07012c;
+        public static int intercom_chat_head_bottom_margin = 0x7f07012d;
+        public static int intercom_chat_overlay_padding_right = 0x7f07012e;
+        public static int intercom_chat_overlay_text_margin_left = 0x7f07012f;
+        public static int intercom_chat_overlay_text_padding_left = 0x7f070130;
+        public static int intercom_chat_overlay_text_padding_right = 0x7f070131;
+        public static int intercom_chat_overlay_width = 0x7f070132;
+        public static int intercom_composer_height = 0x7f070133;
+        public static int intercom_container_card_avatar_size = 0x7f070134;
+        public static int intercom_conversation_rating_size = 0x7f070135;
+        public static int intercom_conversation_row_icon_spacer = 0x7f070136;
+        public static int intercom_conversation_row_margin = 0x7f070137;
+        public static int intercom_home_screen_height = 0x7f070138;
+        public static int intercom_image_rounded_corners = 0x7f070139;
+        public static int intercom_launcher_height = 0x7f07013a;
+        public static int intercom_launcher_padding_bottom = 0x7f07013b;
+        public static int intercom_launcher_padding_right = 0x7f07013c;
+        public static int intercom_link_padding = 0x7f07013d;
+        public static int intercom_list_indentation = 0x7f07013e;
+        public static int intercom_local_image_upload_size = 0x7f07013f;
+        public static int intercom_navigation_dot_radius = 0x7f070140;
+        public static int intercom_navigation_dot_radius_selected = 0x7f070141;
+        public static int intercom_note_cell_padding = 0x7f070142;
+        public static int intercom_note_layout_margin = 0x7f070143;
+        public static int intercom_notification_preview_height = 0x7f070144;
+        public static int intercom_office_hours_height = 0x7f070145;
+        public static int intercom_overlay_pill_bottom_margin = 0x7f070146;
+        public static int intercom_post_cell_padding = 0x7f070147;
+        public static int intercom_reaction_offset = 0x7f070148;
+        public static int intercom_reaction_size = 0x7f070149;
+        public static int intercom_teammate_active_state_size = 0x7f07014a;
+        public static int intercom_teammate_avatar_size = 0x7f07014b;
+        public static int intercom_toolbar_height = 0x7f07014c;
+        public static int intercom_wallpaper_image_alpha = 0x7f07014d;
+
+        private dimen() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class drawable {
+        public static int intercom_article_book_icon = 0x7f080282;
+        public static int intercom_article_webview_loading_state = 0x7f080283;
+        public static int intercom_attribute_verified_tick = 0x7f080284;
+        public static int intercom_border = 0x7f080285;
+        public static int intercom_card_background = 0x7f080286;
+        public static int intercom_carousel_action_button_background = 0x7f080287;
+        public static int intercom_carousel_action_button_background_ripple = 0x7f080288;
+        public static int intercom_check = 0x7f080289;
+        public static int intercom_chevron = 0x7f08028a;
+        public static int intercom_circular_shadow = 0x7f08028b;
+        public static int intercom_clock = 0x7f08028c;
+        public static int intercom_close = 0x7f08028d;
+        public static int intercom_close_round = 0x7f08028e;
+        public static int intercom_content_loading = 0x7f08028f;
+        public static int intercom_conversation_card_background = 0x7f080290;
+        public static int intercom_conversation_card_question = 0x7f080291;
+        public static int intercom_default_avatar_icon = 0x7f080292;
+        public static int intercom_dot_selected_dark = 0x7f080293;
+        public static int intercom_dot_selected_light = 0x7f080294;
+        public static int intercom_dot_unselected_dark = 0x7f080295;
+        public static int intercom_dot_unselected_light = 0x7f080296;
+        public static int intercom_fin_ai_agent = 0x7f080297;
+        public static int intercom_gif_search_icon = 0x7f080298;
+        public static int intercom_help_center_loading_state = 0x7f080299;
+        public static int intercom_help_centre_icon = 0x7f08029a;
+        public static int intercom_ic_ai = 0x7f08029b;
+        public static int intercom_ic_alert_circle = 0x7f08029c;
+        public static int intercom_ic_attachment = 0x7f08029d;
+        public static int intercom_ic_avatar_person = 0x7f08029e;
+        public static int intercom_ic_camera = 0x7f0802a0;
+        public static int intercom_ic_gallery = 0x7f0802a9;
+        public static int intercom_ic_gif_input = 0x7f0802aa;
+        public static int intercom_ic_image = 0x7f0802ab;
+        public static int intercom_ic_info = 0x7f0802ac;
+        public static int intercom_ic_pick_date = 0x7f0802b0;
+        public static int intercom_ic_pick_time = 0x7f0802b1;
+        public static int intercom_ic_plus = 0x7f0802b2;
+        public static int intercom_ic_record = 0x7f0802b4;
+        public static int intercom_ic_reload = 0x7f0802b5;
+        public static int intercom_ic_up_arrow = 0x7f0802b7;
+        public static int intercom_ic_video = 0x7f0802b8;
+        public static int intercom_ic_warning = 0x7f0802b9;
+        public static int intercom_icn_attachment = 0x7f0802ba;
+        public static int intercom_icn_fb = 0x7f0802bb;
+        public static int intercom_icn_twitter = 0x7f0802bc;
+        public static int intercom_image_load_failed = 0x7f0802bd;
+        public static int intercom_inbox = 0x7f0802be;
+        public static int intercom_inbox_loading_state = 0x7f0802bf;
+        public static int intercom_kebab = 0x7f0802c0;
+        public static int intercom_launcher_icon = 0x7f0802c1;
+        public static int intercom_list_arrow_down = 0x7f0802c2;
+        public static int intercom_list_divider = 0x7f0802c3;
+        public static int intercom_logo = 0x7f0802c4;
+        public static int intercom_message_error = 0x7f0802c5;
+        public static int intercom_messages_icon = 0x7f0802c6;
+        public static int intercom_new_conversation_send_button = 0x7f0802c7;
+        public static int intercom_note_background = 0x7f0802c8;
+        public static int intercom_open_help_center = 0x7f0802c9;
+        public static int intercom_part_fade_bottom = 0x7f0802ca;
+        public static int intercom_play_arrow = 0x7f0802cb;
+        public static int intercom_post_gradient = 0x7f0802cc;
+        public static int intercom_preview_pill = 0x7f0802cd;
+        public static int intercom_progress_wheel = 0x7f0802ce;
+        public static int intercom_push_icon = 0x7f0802cf;
+        public static int intercom_reaction_angry = 0x7f0802d0;
+        public static int intercom_reaction_happy = 0x7f0802d1;
+        public static int intercom_reaction_neutral = 0x7f0802d2;
+        public static int intercom_reaction_sad = 0x7f0802d3;
+        public static int intercom_reaction_star_struck = 0x7f0802d4;
+        public static int intercom_rounded_image_preview = 0x7f0802d5;
+        public static int intercom_send_message_icon = 0x7f0802d7;
+        public static int intercom_solid_circle = 0x7f0802d8;
+        public static int intercom_spinner = 0x7f0802d9;
+        public static int intercom_square_image_preview = 0x7f0802da;
+        public static int intercom_submitted = 0x7f0802db;
+        public static int intercom_survey_loading_state = 0x7f0802dc;
+        public static int intercom_tab_dot_selector_dark = 0x7f0802dd;
+        public static int intercom_tab_dot_selector_light = 0x7f0802de;
+        public static int intercom_ticket_detail_icon = 0x7f0802df;
+        public static int intercom_ticket_notification = 0x7f0802e0;
+        public static int intercom_ticket_resolved_icon = 0x7f0802e1;
+        public static int intercom_ticket_submitted_icon = 0x7f0802e2;
+        public static int intercom_ticket_waiting_icon = 0x7f0802e3;
+        public static int intercom_top_shadow = 0x7f0802e4;
+        public static int intercom_transparent_dark_circle = 0x7f0802e5;
+        public static int intercom_twitter = 0x7f0802e6;
+        public static int intercom_video_thumbnail_fallback = 0x7f0802e7;
+
+        private drawable() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class id {
+        public static int action_button = 0x7f0b0049;
+        public static int app_bar_layout = 0x7f0b007b;
+        public static int article_search_compose_view = 0x7f0b007d;
+        public static int author = 0x7f0b0081;
+        public static int avatar = 0x7f0b009e;
+        public static int card_links = 0x7f0b00e8;
+        public static int cellLayout = 0x7f0b00f3;
+        public static int chat_avatar_container = 0x7f0b00fe;
+        public static int chat_full_body = 0x7f0b00ff;
+        public static int chat_full_compose_view = 0x7f0b0100;
+        public static int chat_overlay_overflow_fade = 0x7f0b0101;
+        public static int chat_snippet_compose_view = 0x7f0b0102;
+        public static int chathead_avatar = 0x7f0b0103;
+        public static int chathead_avatar_compose_view = 0x7f0b0104;
+        public static int chathead_root = 0x7f0b0105;
+        public static int chathead_text_body = 0x7f0b0106;
+        public static int chathead_text_container = 0x7f0b0107;
+        public static int chathead_text_header = 0x7f0b0108;
+        public static int composer_input_view = 0x7f0b0183;
+        public static int description = 0x7f0b01b9;
+        public static int empty_text_subtitle = 0x7f0b01e7;
+        public static int empty_text_title = 0x7f0b01e8;
+        public static int error_layout_sheet = 0x7f0b01ef;
+        public static int full_image = 0x7f0b026c;
+        public static int image_holder = 0x7f0b02a8;
+        public static int in_app_notification_message_summary = 0x7f0b02b3;
+        public static int input = 0x7f0b02b8;
+        public static int intercom_carousel_action_layout = 0x7f0b02ba;
+        public static int intercom_carousel_close_container = 0x7f0b02bb;
+        public static int intercom_carousel_content_container = 0x7f0b02bc;
+        public static int intercom_carousel_fragment_root = 0x7f0b02bd;
+        public static int intercom_carousel_gradient = 0x7f0b02be;
+        public static int intercom_carousel_root = 0x7f0b02bf;
+        public static int intercom_carousel_scroll_view = 0x7f0b02c0;
+        public static int intercom_close = 0x7f0b02c1;
+        public static int intercom_close_background = 0x7f0b02c2;
+        public static int intercom_help_center_webview = 0x7f0b02c3;
+        public static int intercom_left_item_layout = 0x7f0b02c4;
+        public static int intercom_messenger_card_webview = 0x7f0b02c5;
+        public static int intercom_overlay_root = 0x7f0b02c6;
+        public static int intercom_page_navigation_layout = 0x7f0b02c7;
+        public static int intercom_rating_options_layout = 0x7f0b02c8;
+        public static int intercom_rating_tell_us_more_button = 0x7f0b02c9;
+        public static int intercom_reply_options = 0x7f0b02ca;
+        public static int intercom_search_screen_root = 0x7f0b02cb;
+        public static int intercom_sheet_webview = 0x7f0b02cc;
+        public static int intercom_state_container = 0x7f0b02cd;
+        public static int intercom_toolbar = 0x7f0b02ce;
+        public static int intercom_toolbar_avatar = 0x7f0b02cf;
+        public static int intercom_toolbar_avatar_active_state = 0x7f0b02d0;
+        public static int intercom_toolbar_close = 0x7f0b02d1;
+        public static int intercom_toolbar_divider = 0x7f0b02d2;
+        public static int intercom_toolbar_inbox = 0x7f0b02d3;
+        public static int intercom_toolbar_subtitle = 0x7f0b02d4;
+        public static int intercom_toolbar_title = 0x7f0b02d5;
+        public static int intercom_toolbar_title_container = 0x7f0b02d6;
+        public static int intercom_video_thumbnail = 0x7f0b02d7;
+        public static int intercom_video_thumbnail_play_button = 0x7f0b02d8;
+        public static int intercom_view_pager = 0x7f0b02d9;
+        public static int intercom_you_rated_image_view = 0x7f0b02da;
+        public static int intercom_you_rated_layout = 0x7f0b02db;
+        public static int launcher_badge_count = 0x7f0b02f6;
+        public static int launcher_icon = 0x7f0b02f7;
+        public static int launcher_root = 0x7f0b02f8;
+        public static int loading_view = 0x7f0b0311;
+        public static int note_composer_container = 0x7f0b0381;
+        public static int note_layout = 0x7f0b0382;
+        public static int note_root = 0x7f0b0383;
+        public static int note_touch_target = 0x7f0b0384;
+        public static int note_view = 0x7f0b0385;
+        public static int notification_pill = 0x7f0b0389;
+        public static int notification_root = 0x7f0b038a;
+        public static int parent_card = 0x7f0b03b6;
+        public static int preview_avatar = 0x7f0b041b;
+        public static int preview_avatar_compose_view = 0x7f0b041c;
+        public static int progressBar = 0x7f0b0427;
+        public static int rate_your_conversation_text_view = 0x7f0b0430;
+        public static int reaction_input_view = 0x7f0b0439;
+        public static int reply_from_textview = 0x7f0b043c;
+        public static int root_view = 0x7f0b0462;
+        public static int sheet_root = 0x7f0b04a2;
+        public static int sheet_view = 0x7f0b04a3;
+        public static int text = 0x7f0b0504;
+        public static int ticket_header_compose_view = 0x7f0b051a;
+        public static int title = 0x7f0b051c;
+        public static int toolbar_content_container = 0x7f0b052d;
+        public static int toolbar_progress_bar = 0x7f0b052e;
+        public static int wallpaper_image = 0x7f0b0594;
+
+        private id() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class integer {
+        public static int intercom_max_composer_lines = 0x7f0c000e;
+        public static int intercom_server_region_aus = 0x7f0c000f;
+        public static int intercom_server_region_eu = 0x7f0c0010;
+        public static int intercom_server_region_us = 0x7f0c0011;
+
+        private integer() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class layout {
+        public static int intercom_activity_article_search = 0x7f0e006c;
+        public static int intercom_activity_carousel = 0x7f0e006d;
+        public static int intercom_activity_lightbox = 0x7f0e006e;
+        public static int intercom_activity_note = 0x7f0e006f;
+        public static int intercom_activity_sheet = 0x7f0e0070;
+        public static int intercom_blocks_admin_layout = 0x7f0e0071;
+        public static int intercom_blocks_article_layout = 0x7f0e0072;
+        public static int intercom_blocks_carousel_layout = 0x7f0e0073;
+        public static int intercom_blocks_container_card_layout = 0x7f0e0074;
+        public static int intercom_blocks_container_layout = 0x7f0e0075;
+        public static int intercom_blocks_note_layout = 0x7f0e0076;
+        public static int intercom_blocks_user_layout = 0x7f0e0077;
+        public static int intercom_card_list_block = 0x7f0e0078;
+        public static int intercom_carousel_action_button = 0x7f0e0079;
+        public static int intercom_carousel_action_button_tick = 0x7f0e007a;
+        public static int intercom_container_layout = 0x7f0e007b;
+        public static int intercom_conversation_rating_block = 0x7f0e007c;
+        public static int intercom_default_launcher = 0x7f0e007d;
+        public static int intercom_error_sheet = 0x7f0e007e;
+        public static int intercom_fake_composer = 0x7f0e007f;
+        public static int intercom_fragment_carousel_screen = 0x7f0e0080;
+        public static int intercom_image_text_block = 0x7f0e0081;
+        public static int intercom_link_block = 0x7f0e0082;
+        public static int intercom_messenger_card_block = 0x7f0e0083;
+        public static int intercom_notification_pill = 0x7f0e0084;
+        public static int intercom_preview_chat_full_overlay = 0x7f0e0085;
+        public static int intercom_preview_chat_snippet_overlay = 0x7f0e0086;
+        public static int intercom_preview_notification = 0x7f0e0087;
+        public static int intercom_progress_bar = 0x7f0e0088;
+        public static int intercom_toolbar = 0x7f0e0089;
+        public static int intercom_webview_card_input = 0x7f0e008a;
+
+        private layout() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class raw {
+        public static int intercom_area_codes = 0x7f140003;
+        public static int intercom_failed = 0x7f140004;
+        public static int intercom_operator = 0x7f140005;
+        public static int intercom_received = 0x7f140006;
+        public static int intercom_sent = 0x7f140007;
+        public static int keep = 0x7f140008;
+
+        private raw() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class string {
+        public static int intercom_access_background_location_message = 0x7f1501cb;
+        public static int intercom_access_background_location_title = 0x7f1501cc;
+        public static int intercom_access_device_settings = 0x7f1501cd;
+        public static int intercom_access_photos = 0x7f1501ce;
+        public static int intercom_active_15m_ago = 0x7f1501cf;
+        public static int intercom_active_day_ago = 0x7f1501d0;
+        public static int intercom_active_hour_ago = 0x7f1501d1;
+        public static int intercom_active_minute_ago = 0x7f1501d2;
+        public static int intercom_active_state = 0x7f1501d3;
+        public static int intercom_active_week_ago = 0x7f1501d4;
+        public static int intercom_add = 0x7f1501d5;
+        public static int intercom_ai_answer = 0x7f1501d6;
+        public static int intercom_ai_answer_information = 0x7f1501d7;
+        public static int intercom_ai_bot = 0x7f1501d8;
+        public static int intercom_allow_access = 0x7f1501d9;
+        public static int intercom_allow_storage_access = 0x7f1501da;
+        public static int intercom_almost_there = 0x7f1501db;
+        public static int intercom_also_in_this_conversation = 0x7f1501dc;
+        public static int intercom_android_activated_message = 0x7f1501dd;
+        public static int intercom_answer = 0x7f1501de;
+        public static int intercom_app_settings = 0x7f1501df;
+        public static int intercom_article_double_author = 0x7f1501e0;
+        public static int intercom_article_load_error = 0x7f1501e1;
+        public static int intercom_article_multiple_authors = 0x7f1501e2;
+        public static int intercom_article_question = 0x7f1501e3;
+        public static int intercom_article_response = 0x7f1501e4;
+        public static int intercom_article_search_hint_text = 0x7f1501e5;
+        public static int intercom_article_search_search_results = 0x7f1501e6;
+        public static int intercom_article_single_author = 0x7f1501e7;
+        public static int intercom_ask_a_question = 0x7f1501e8;
+        public static int intercom_ask_a_question_with_ellipsis = 0x7f1501e9;
+        public static int intercom_ask_another_question_with_ellipsis = 0x7f1501ea;
+        public static int intercom_ask_our_bot_a_question = 0x7f1501eb;
+        public static int intercom_asked_about = 0x7f1501ec;
+        public static int intercom_assigned_to_admin = 0x7f1501ed;
+        public static int intercom_attribute_collector_negative = 0x7f1501ee;
+        public static int intercom_attribute_collector_positive = 0x7f1501ef;
+        public static int intercom_available_teammates = 0x7f1501f0;
+        public static int intercom_avatar = 0x7f1501f1;
+        public static int intercom_avatars = 0x7f1501f2;
+        public static int intercom_away_state = 0x7f1501f3;
+        public static int intercom_bot = 0x7f1501f4;
+        public static int intercom_bot_answers_instantly = 0x7f1501f5;
+        public static int intercom_bot_expectation_text = 0x7f1501f6;
+        public static int intercom_bot_is_still_thinking = 0x7f1501f7;
+        public static int intercom_bot_is_thinking = 0x7f1501f8;
+        public static int intercom_browse_all_help_topics = 0x7f1501f9;
+        public static int intercom_browse_collections = 0x7f1501fa;
+        public static int intercom_cancel = 0x7f1501fb;
+        public static int intercom_chat_with_us = 0x7f1501fc;
+        public static int intercom_check_later_for_updates = 0x7f1501fd;
+        public static int intercom_checklist_card_first_step = 0x7f1501fe;
+        public static int intercom_checklist_card_next_step = 0x7f1501ff;
+        public static int intercom_checklist_completed = 0x7f150200;
+        public static int intercom_checklist_in_progress_time_remaining_plural = 0x7f150201;
+        public static int intercom_checklist_in_progress_time_remaining_singular = 0x7f150202;
+        public static int intercom_checklist_mark_step_as_complete = 0x7f150203;
+        public static int intercom_checklist_not_started_time_remaining_plural = 0x7f150204;
+        public static int intercom_checklist_not_started_time_remaining_singular = 0x7f150205;
+        public static int intercom_checklist_number_of_steps_plural = 0x7f150206;
+        public static int intercom_checklist_number_of_steps_progress_plural = 0x7f150207;
+        public static int intercom_checklist_number_of_steps_progress_singular = 0x7f150208;
+        public static int intercom_checklist_number_of_steps_singular = 0x7f150209;
+        public static int intercom_checklist_sender_name = 0x7f15020a;
+        public static int intercom_checklist_step_action_button = 0x7f15020b;
+        public static int intercom_checklist_step_completed = 0x7f15020c;
+        public static int intercom_choose_one = 0x7f15020d;
+        public static int intercom_choose_the_date = 0x7f15020e;
+        public static int intercom_clear = 0x7f15020f;
+        public static int intercom_close = 0x7f150210;
+        public static int intercom_congratulations = 0x7f150211;
+        public static int intercom_connected = 0x7f150212;
+        public static int intercom_contact_support = 0x7f150213;
+        public static int intercom_contact_us = 0x7f150214;
+        public static int intercom_continue_the_conversation = 0x7f150215;
+        public static int intercom_conversation_card_office_hours_header = 0x7f150216;
+        public static int intercom_conversation_card_reply_time_header = 0x7f150217;
+        public static int intercom_conversation_card_reply_time_header_m5 = 0x7f150218;
+        public static int intercom_conversation_has_ended = 0x7f150219;
+        public static int intercom_conversation_number_and_description = 0x7f15021a;
+        public static int intercom_conversations = 0x7f15021b;
+        public static int intercom_conversations_space_title = 0x7f15021c;
+        public static int intercom_conversations_with_app = 0x7f15021d;
+        public static int intercom_copied_to_clipboard = 0x7f15021e;
+        public static int intercom_couldnt_complete_action = 0x7f15021f;
+        public static int intercom_couldnt_load_apps = 0x7f150220;
+        public static int intercom_couldnt_load_content = 0x7f150221;
+        public static int intercom_couldnt_load_messenger = 0x7f150222;
+        public static int intercom_create_a_ticket = 0x7f150223;
+        public static int intercom_currently_no_help_articles = 0x7f150224;
+        public static int intercom_delete_attachment = 0x7f150225;
+        public static int intercom_delivered = 0x7f150226;
+        public static int intercom_disappointed_face_emoji = 0x7f150227;
+        public static int intercom_dismiss = 0x7f150228;
+        public static int intercom_empty_conversations = 0x7f150229;
+        public static int intercom_enter_text_placeholder = 0x7f15022a;
+        public static int intercom_error_loading_conversation = 0x7f15022b;
+        public static int intercom_error_loading_ticket = 0x7f15022c;
+        public static int intercom_expected_response_delay_10800 = 0x7f15022d;
+        public static int intercom_expected_response_delay_120 = 0x7f15022e;
+        public static int intercom_expected_response_delay_1200 = 0x7f15022f;
+        public static int intercom_expected_response_delay_14400 = 0x7f150230;
+        public static int intercom_expected_response_delay_172800 = 0x7f150231;
+        public static int intercom_expected_response_delay_180 = 0x7f150232;
+        public static int intercom_expected_response_delay_1800 = 0x7f150233;
+        public static int intercom_expected_response_delay_18000 = 0x7f150234;
+        public static int intercom_expected_response_delay_21600 = 0x7f150235;
+        public static int intercom_expected_response_delay_240 = 0x7f150236;
+        public static int intercom_expected_response_delay_259200 = 0x7f150237;
+        public static int intercom_expected_response_delay_300 = 0x7f150238;
+        public static int intercom_expected_response_delay_345600 = 0x7f150239;
+        public static int intercom_expected_response_delay_3600 = 0x7f15023a;
+        public static int intercom_expected_response_delay_43200 = 0x7f15023b;
+        public static int intercom_expected_response_delay_432000 = 0x7f15023c;
+        public static int intercom_expected_response_delay_518400 = 0x7f15023d;
+        public static int intercom_expected_response_delay_60 = 0x7f15023e;
+        public static int intercom_expected_response_delay_600 = 0x7f15023f;
+        public static int intercom_expected_response_delay_604800 = 0x7f150240;
+        public static int intercom_expected_response_delay_7200 = 0x7f150241;
+        public static int intercom_expected_response_delay_86400 = 0x7f150242;
+        public static int intercom_expected_response_delay_900 = 0x7f150243;
+        public static int intercom_extra_labels_count = 0x7f150244;
+        public static int intercom_facebook_like = 0x7f150245;
+        public static int intercom_failed_delivery = 0x7f150246;
+        public static int intercom_failed_to_load_conversation = 0x7f150247;
+        public static int intercom_failed_to_load_tickets = 0x7f150248;
+        public static int intercom_failed_to_load_tickets_with_app = 0x7f150249;
+        public static int intercom_failed_to_send = 0x7f15024a;
+        public static int intercom_field_is_required = 0x7f15024b;
+        public static int intercom_file_access_failed = 0x7f15024c;
+        public static int intercom_file_max_limit = 0x7f15024d;
+        public static int intercom_file_saved = 0x7f15024e;
+        public static int intercom_file_too_big = 0x7f15024f;
+        public static int intercom_file_too_large_to_transcribe = 0x7f150250;
+        public static int intercom_file_type_not_allowed = 0x7f150251;
+        public static int intercom_files = 0x7f150252;
+        public static int intercom_gallery = 0x7f150253;
+        public static int intercom_gcm_sender_id = 0x7f150254;
+        public static int intercom_generating_answer = 0x7f150255;
+        public static int intercom_get_help = 0x7f150256;
+        public static int intercom_get_notified_by_email = 0x7f150257;
+        public static int intercom_gif_attribution = 0x7f150258;
+        public static int intercom_gifs_load_error = 0x7f150259;
+        public static int intercom_give_it_another_try = 0x7f15025a;
+        public static int intercom_go_to_device_settings = 0x7f15025b;
+        public static int intercom_grinning_face_with_big_eyes_emoji = 0x7f15025c;
+        public static int intercom_group_conversation_1_other_participant_count_short = 0x7f15025d;
+        public static int intercom_group_conversation_multiple_other_participant_count_short = 0x7f15025e;
+        public static int intercom_group_conversation_multiple_person_also_participating = 0x7f15025f;
+        public static int intercom_group_conversation_name_also_participating = 0x7f150260;
+        public static int intercom_group_conversation_name_and_1_other_also_particiapting = 0x7f150261;
+        public static int intercom_group_conversation_name_and_multiple_others_also_participating = 0x7f150262;
+        public static int intercom_group_conversation_one_person_also_participating = 0x7f150263;
+        public static int intercom_help_center = 0x7f150264;
+        public static int intercom_help_center_article = 0x7f150265;
+        public static int intercom_help_space_title = 0x7f150266;
+        public static int intercom_home_space_title = 0x7f150267;
+        public static int intercom_how_can_we_help = 0x7f150268;
+        public static int intercom_how_would_you_rate_this = 0x7f150269;
+        public static int intercom_image_attached = 0x7f15026a;
+        public static int intercom_inbox_error_state_title = 0x7f15026b;
+        public static int intercom_last_active_hours_ago = 0x7f15026c;
+        public static int intercom_last_active_mins_ago = 0x7f15026d;
+        public static int intercom_last_active_over_a_week = 0x7f15026e;
+        public static int intercom_learn_more = 0x7f15026f;
+        public static int intercom_listening = 0x7f150270;
+        public static int intercom_loading = 0x7f150271;
+        public static int intercom_message_failed_try_again = 0x7f150272;
+        public static int intercom_message_placeholder = 0x7f150273;
+        public static int intercom_message_seen = 0x7f150274;
+        public static int intercom_message_state_sending = 0x7f150275;
+        public static int intercom_message_summary = 0x7f150276;
+        public static int intercom_message_summary_with_teammate_status = 0x7f150277;
+        public static int intercom_message_unread = 0x7f150278;
+        public static int intercom_message_unseen = 0x7f150279;
+        public static int intercom_messages_space_title = 0x7f15027a;
+        public static int intercom_messenger_bot_reply_time = 0x7f15027b;
+        public static int intercom_multiple_articles = 0x7f15027c;
+        public static int intercom_multiple_collections = 0x7f15027d;
+        public static int intercom_name_and_1_other = 0x7f15027e;
+        public static int intercom_name_and_x_others = 0x7f15027f;
+        public static int intercom_navigation_back = 0x7f150280;
+        public static int intercom_need_camera_access = 0x7f150281;
+        public static int intercom_need_microphone_access = 0x7f150282;
+        public static int intercom_neutral_face_emoji = 0x7f150283;
+        public static int intercom_new = 0x7f150284;
+        public static int intercom_new_conversation = 0x7f150285;
+        public static int intercom_new_message = 0x7f150286;
+        public static int intercom_new_messages = 0x7f150287;
+        public static int intercom_new_notifications = 0x7f150288;
+        public static int intercom_news = 0x7f150289;
+        public static int intercom_news_empty_title = 0x7f15028a;
+        public static int intercom_news_latest_subtitle = 0x7f15028b;
+        public static int intercom_news_latest_title = 0x7f15028c;
+        public static int intercom_news_older_title = 0x7f15028d;
+        public static int intercom_news_space_title = 0x7f15028e;
+        public static int intercom_no_articles_to_display = 0x7f15028f;
+        public static int intercom_no_conversations = 0x7f150290;
+        public static int intercom_no_gifs_found = 0x7f150291;
+        public static int intercom_no_gifs_matching_query = 0x7f150292;
+        public static int intercom_no_help_articles_to_display = 0x7f150293;
+        public static int intercom_no_messages_from_the_team = 0x7f150294;
+        public static int intercom_no_network_connection = 0x7f150295;
+        public static int intercom_no_photos = 0x7f150296;
+        public static int intercom_no_photos_on_device = 0x7f150297;
+        public static int intercom_no_results_for_searchterm = 0x7f150298;
+        public static int intercom_no_tasks = 0x7f150299;
+        public static int intercom_no_tasks_available_currently = 0x7f15029a;
+        public static int intercom_not_now = 0x7f15029b;
+        public static int intercom_nothing_to_see_here_yet = 0x7f15029c;
+        public static int intercom_notification_channel_actions_description = 0x7f15029d;
+        public static int intercom_notification_channel_actions_title = 0x7f15029e;
+        public static int intercom_notification_channel_chat_replies_description = 0x7f15029f;
+        public static int intercom_notification_channel_chat_replies_title = 0x7f1502a0;
+        public static int intercom_notification_channel_new_chats_description = 0x7f1502a1;
+        public static int intercom_notification_channel_new_chats_title = 0x7f1502a2;
+        public static int intercom_notification_enable_prompt = 0x7f1502a3;
+        public static int intercom_number_is_incorrect = 0x7f1502a4;
+        public static int intercom_ok = 0x7f1502a5;
+        public static int intercom_one_new_message = 0x7f1502a6;
+        public static int intercom_our_bot_answers_instantly = 0x7f1502a7;
+        public static int intercom_page_not_found = 0x7f1502a8;
+        public static int intercom_permission_denied = 0x7f1502a9;
+        public static int intercom_photo_access_denied = 0x7f1502aa;
+        public static int intercom_photo_and_video_library = 0x7f1502ab;
+        public static int intercom_placeholder_datepicker = 0x7f1502ac;
+        public static int intercom_placeholder_email_input = 0x7f1502ad;
+        public static int intercom_placeholder_numerical_inputs = 0x7f1502ae;
+        public static int intercom_placeholder_text_inputs = 0x7f1502af;
+        public static int intercom_please_select = 0x7f1502b0;
+        public static int intercom_plus_x_more = 0x7f1502b1;
+        public static int intercom_powered_by_fin_ai_agent = 0x7f1502b2;
+        public static int intercom_powered_by_intercom = 0x7f1502b3;
+        public static int intercom_profile_location = 0x7f1502b4;
+        public static int intercom_rate_your_conversation = 0x7f1502b5;
+        public static int intercom_recent_ticket = 0x7f1502b6;
+        public static int intercom_recent_tickets = 0x7f1502b7;
+        public static int intercom_record_a_video = 0x7f1502b8;
+        public static int intercom_reload = 0x7f1502b9;
+        public static int intercom_reply = 0x7f1502ba;
+        public static int intercom_reply_from_admin = 0x7f1502bb;
+        public static int intercom_reply_to_conversation = 0x7f1502bc;
+        public static int intercom_report_ai_answer = 0x7f1502bd;
+        public static int intercom_report_ai_answer_message = 0x7f1502be;
+        public static int intercom_retry = 0x7f1502bf;
+        public static int intercom_saving = 0x7f1502c0;
+        public static int intercom_search_browse_empty_state_text = 0x7f1502c1;
+        public static int intercom_search_for_help = 0x7f1502c2;
+        public static int intercom_search_gif = 0x7f1502c3;
+        public static int intercom_search_help_articles = 0x7f1502c4;
+        public static int intercom_see_all = 0x7f1502c5;
+        public static int intercom_see_all_conversations = 0x7f1502c6;
+        public static int intercom_see_past_conversations = 0x7f1502c7;
+        public static int intercom_see_previous_conversations = 0x7f1502c8;
+        public static int intercom_select_files = 0x7f1502c9;
+        public static int intercom_send = 0x7f1502ca;
+        public static int intercom_send_a_message_reply_time = 0x7f1502cb;
+        public static int intercom_send_us_a_message = 0x7f1502cc;
+        public static int intercom_send_us_a_message_bot = 0x7f1502cd;
+        public static int intercom_settings = 0x7f1502ce;
+        public static int intercom_shared_by = 0x7f1502cf;
+        public static int intercom_show_less = 0x7f1502d0;
+        public static int intercom_single_article = 0x7f1502d1;
+        public static int intercom_single_collection = 0x7f1502d2;
+        public static int intercom_some_things_failed_to_load = 0x7f1502d3;
+        public static int intercom_something_went_wrong_try_again = 0x7f1502d4;
+        public static int intercom_source = 0x7f1502d5;
+        public static int intercom_sources = 0x7f1502d6;
+        public static int intercom_spaces_error_description = 0x7f1502d7;
+        public static int intercom_spaces_error_title = 0x7f1502d8;
+        public static int intercom_start_a_conversation = 0x7f1502d9;
+        public static int intercom_start_another_conversation = 0x7f1502da;
+        public static int intercom_start_conversation = 0x7f1502db;
+        public static int intercom_status = 0x7f1502dc;
+        public static int intercom_still_generating_answer = 0x7f1502dd;
+        public static int intercom_still_thinking = 0x7f1502de;
+        public static int intercom_still_working_on_it = 0x7f1502df;
+        public static int intercom_stop_upload = 0x7f1502e0;
+        public static int intercom_storage_access_request = 0x7f1502e1;
+        public static int intercom_string_is_incorrect = 0x7f1502e2;
+        public static int intercom_submit = 0x7f1502e3;
+        public static int intercom_suggested_articles = 0x7f1502e4;
+        public static int intercom_surveys_all_options_response_hint = 0x7f1502e5;
+        public static int intercom_surveys_dismiss = 0x7f1502e6;
+        public static int intercom_surveys_done_button = 0x7f1502e7;
+        public static int intercom_surveys_dropdown_default_option = 0x7f1502e8;
+        public static int intercom_surveys_email_error = 0x7f1502e9;
+        public static int intercom_surveys_fixed_response_count_response_hint = 0x7f1502ea;
+        public static int intercom_surveys_from_company = 0x7f1502eb;
+        public static int intercom_surveys_from_teammate = 0x7f1502ec;
+        public static int intercom_surveys_multi_select_too_few_responses = 0x7f1502ed;
+        public static int intercom_surveys_multi_select_too_many_responses = 0x7f1502ee;
+        public static int intercom_surveys_multi_star_rating = 0x7f1502ef;
+        public static int intercom_surveys_multiselect_other_option = 0x7f1502f0;
+        public static int intercom_surveys_multiselect_other_option_input_label = 0x7f1502f1;
+        public static int intercom_surveys_multiselect_other_option_input_placeholder = 0x7f1502f2;
+        public static int intercom_surveys_multiselect_other_option_value = 0x7f1502f3;
+        public static int intercom_surveys_next_button = 0x7f1502f4;
+        public static int intercom_surveys_nps_lower_label = 0x7f1502f5;
+        public static int intercom_surveys_nps_upper_label = 0x7f1502f6;
+        public static int intercom_surveys_number_error = 0x7f1502f7;
+        public static int intercom_surveys_one_star_rating = 0x7f1502f8;
+        public static int intercom_surveys_question_question_number_of_question_count = 0x7f1502f9;
+        public static int intercom_surveys_required_question = 0x7f1502fa;
+        public static int intercom_surveys_required_response = 0x7f1502fb;
+        public static int intercom_surveys_response_range_response_hint = 0x7f1502fc;
+        public static int intercom_surveys_response_too_long = 0x7f1502fd;
+        public static int intercom_surveys_response_too_short = 0x7f1502fe;
+        public static int intercom_surveys_sender_image = 0x7f1502ff;
+        public static int intercom_surveys_single_response_hint = 0x7f150300;
+        public static int intercom_surveys_telephone_error = 0x7f150301;
+        public static int intercom_surveys_text_input_question_placeholder = 0x7f150302;
+        public static int intercom_take_a_photo = 0x7f150303;
+        public static int intercom_tap_to_send_image = 0x7f150304;
+        public static int intercom_tasks_space_title = 0x7f150305;
+        public static int intercom_team_name_custom_response_delay_2 = 0x7f150306;
+        public static int intercom_team_name_custom_response_delay_3 = 0x7f150307;
+        public static int intercom_team_name_proactive_expected_response_delay_one_business_day = 0x7f150308;
+        public static int intercom_team_name_proactive_expected_response_delay_two_business_days = 0x7f150309;
+        public static int intercom_teammate_from_company = 0x7f15030a;
+        public static int intercom_tell_us_more = 0x7f15030b;
+        public static int intercom_tell_us_what_you_need = 0x7f15030c;
+        public static int intercom_thanks_custom_response_delay_one_business_day = 0x7f15030d;
+        public static int intercom_thanks_custom_response_delay_two_business_days = 0x7f15030e;
+        public static int intercom_thanks_for_letting_us_know = 0x7f15030f;
+        public static int intercom_thanks_proactive_expected_response_delay_unknown = 0x7f150310;
+        public static int intercom_that_country_code_doesnt_look_quite_right = 0x7f150311;
+        public static int intercom_that_email_address_doesnt_look_quite_right = 0x7f150312;
+        public static int intercom_that_number_doesnt_look_quite_right = 0x7f150313;
+        public static int intercom_that_number_has_too_many_digits = 0x7f150314;
+        public static int intercom_that_number_is_missing_a_few_digits = 0x7f150315;
+        public static int intercom_that_number_needs_a_prefix = 0x7f150316;
+        public static int intercom_the_team_can_help_if_needed = 0x7f150317;
+        public static int intercom_the_team_typically_replies_in_hours = 0x7f150318;
+        public static int intercom_the_team_typically_replies_in_one_business_day = 0x7f150319;
+        public static int intercom_the_team_typically_replies_in_two_business_days = 0x7f15031a;
+        public static int intercom_thinking = 0x7f15031b;
+        public static int intercom_ticket_could_not_be_created = 0x7f15031c;
+        public static int intercom_ticket_create_ticket_with_type_title = 0x7f15031d;
+        public static int intercom_ticket_current_status = 0x7f15031e;
+        public static int intercom_ticket_current_status_with_date = 0x7f15031f;
+        public static int intercom_ticket_details_attributes_accessibility_text = 0x7f150320;
+        public static int intercom_ticket_details_for_title = 0x7f150321;
+        public static int intercom_ticket_details_notification_detail = 0x7f150322;
+        public static int intercom_ticket_has_been_created = 0x7f150323;
+        public static int intercom_ticket_has_been_updated = 0x7f150324;
+        public static int intercom_ticket_sla_details = 0x7f150325;
+        public static int intercom_ticket_status_details = 0x7f150326;
+        public static int intercom_ticket_status_event_moved_automation_with_bullet_point = 0x7f150327;
+        public static int intercom_ticket_status_event_moved_with_bullet_point = 0x7f150328;
+        public static int intercom_tickets_add_file = 0x7f150329;
+        public static int intercom_tickets_add_files = 0x7f15032a;
+        public static int intercom_tickets_create_ticket = 0x7f15032b;
+        public static int intercom_tickets_create_ticket_fallback = 0x7f15032c;
+        public static int intercom_tickets_created_confirmation_header = 0x7f15032d;
+        public static int intercom_tickets_cta_text = 0x7f15032e;
+        public static int intercom_tickets_email_copy = 0x7f15032f;
+        public static int intercom_tickets_email_subject = 0x7f150330;
+        public static int intercom_tickets_email_subject_with_ticket_id = 0x7f150331;
+        public static int intercom_tickets_empty_state_text = 0x7f150332;
+        public static int intercom_tickets_empty_state_title = 0x7f150333;
+        public static int intercom_tickets_estimated_resolution = 0x7f150334;
+        public static int intercom_tickets_files_added = 0x7f150335;
+        public static int intercom_tickets_have_a_question = 0x7f150336;
+        public static int intercom_tickets_in_progress_status_detail = 0x7f150337;
+        public static int intercom_tickets_in_progress_status_detail_with_assignee = 0x7f150338;
+        public static int intercom_tickets_is_resolved = 0x7f150339;
+        public static int intercom_tickets_log_a_ticket = 0x7f15033a;
+        public static int intercom_tickets_resolved_status_detail = 0x7f15033b;
+        public static int intercom_tickets_resolved_status_detail_with_assignee = 0x7f15033c;
+        public static int intercom_tickets_sla = 0x7f15033d;
+        public static int intercom_tickets_space_title = 0x7f15033e;
+        public static int intercom_tickets_status_change_event = 0x7f15033f;
+        public static int intercom_tickets_status_description_completed = 0x7f150340;
+        public static int intercom_tickets_status_description_more_info = 0x7f150341;
+        public static int intercom_tickets_status_description_prefix_status_changed_by_admin = 0x7f150342;
+        public static int intercom_tickets_status_description_prefix_status_changed_by_admin_with_ticket_id = 0x7f150343;
+        public static int intercom_tickets_status_description_prefix_status_changed_by_operator = 0x7f150344;
+        public static int intercom_tickets_status_description_prefix_status_changed_by_operator_with_ticket_id = 0x7f150345;
+        public static int intercom_tickets_status_description_prefix_when_submitted = 0x7f150346;
+        public static int intercom_tickets_status_description_prefix_when_submitted_with_ticket_id = 0x7f150347;
+        public static int intercom_tickets_status_description_well_pick_up_soon = 0x7f150348;
+        public static int intercom_tickets_status_description_working_on = 0x7f150349;
+        public static int intercom_tickets_status_event_moved = 0x7f15034a;
+        public static int intercom_tickets_status_event_moved_automation = 0x7f15034b;
+        public static int intercom_tickets_status_event_submitted = 0x7f15034c;
+        public static int intercom_tickets_status_in_progress = 0x7f15034d;
+        public static int intercom_tickets_status_resolved = 0x7f15034e;
+        public static int intercom_tickets_status_submitted = 0x7f15034f;
+        public static int intercom_tickets_status_waiting_on_you = 0x7f150350;
+        public static int intercom_tickets_submitted_confirmation_header = 0x7f150351;
+        public static int intercom_tickets_submitted_confirmation_paragraph = 0x7f150352;
+        public static int intercom_tickets_submitted_status_detail = 0x7f150353;
+        public static int intercom_tickets_submitted_status_detail_with_assignee = 0x7f150354;
+        public static int intercom_tickets_unread = 0x7f150355;
+        public static int intercom_tickets_updates_prompt = 0x7f150356;
+        public static int intercom_tickets_view_ticket = 0x7f150357;
+        public static int intercom_tickets_waiting_on_customer_status_detail = 0x7f150358;
+        public static int intercom_tickets_waiting_on_customer_status_detail_with_assignee = 0x7f150359;
+        public static int intercom_time_day_ago = 0x7f15035a;
+        public static int intercom_time_future_1h = 0x7f15035b;
+        public static int intercom_time_future_2h = 0x7f15035c;
+        public static int intercom_time_future_30m = 0x7f15035d;
+        public static int intercom_time_future_3h = 0x7f15035e;
+        public static int intercom_time_future_day_0 = 0x7f15035f;
+        public static int intercom_time_future_day_1 = 0x7f150360;
+        public static int intercom_time_future_day_2 = 0x7f150361;
+        public static int intercom_time_future_day_3 = 0x7f150362;
+        public static int intercom_time_future_day_4 = 0x7f150363;
+        public static int intercom_time_future_day_5 = 0x7f150364;
+        public static int intercom_time_future_day_6 = 0x7f150365;
+        public static int intercom_time_future_later_today = 0x7f150366;
+        public static int intercom_time_future_next_week = 0x7f150367;
+        public static int intercom_time_future_tomorrow = 0x7f150368;
+        public static int intercom_time_hour_ago = 0x7f150369;
+        public static int intercom_time_just_now = 0x7f15036a;
+        public static int intercom_time_minute_ago = 0x7f15036b;
+        public static int intercom_time_week_ago = 0x7f15036c;
+        public static int intercom_time_yesterday = 0x7f15036d;
+        public static int intercom_transcribing = 0x7f15036e;
+        public static int intercom_transcription_failed = 0x7f15036f;
+        public static int intercom_try_again = 0x7f150370;
+        public static int intercom_try_again_minute = 0x7f150371;
+        public static int intercom_try_use_different_keywords = 0x7f150372;
+        public static int intercom_twitter_follow = 0x7f150373;
+        public static int intercom_two_business_days = 0x7f150374;
+        public static int intercom_type_a_number = 0x7f150375;
+        public static int intercom_typically_replies_in_one_business_day = 0x7f150376;
+        public static int intercom_typically_replies_in_two_business_days = 0x7f150377;
+        public static int intercom_unread_message_count = 0x7f150378;
+        public static int intercom_upfront_collection_form_close_out = 0x7f150379;
+        public static int intercom_upfront_collection_form_introduction = 0x7f15037a;
+        public static int intercom_upfront_collection_form_submission_confirmation = 0x7f15037b;
+        public static int intercom_upfront_collection_form_subtitle = 0x7f15037c;
+        public static int intercom_upfront_collection_form_subtitle_submitted = 0x7f15037d;
+        public static int intercom_upfront_collection_form_title = 0x7f15037e;
+        public static int intercom_upfront_collection_form_title_submitted = 0x7f15037f;
+        public static int intercom_upload_failed = 0x7f150380;
+        public static int intercom_upload_max_files_allowed = 0x7f150381;
+        public static int intercom_upload_max_files_size = 0x7f150382;
+        public static int intercom_user_avatar_image = 0x7f150383;
+        public static int intercom_view_all = 0x7f150384;
+        public static int intercom_view_conversation = 0x7f150385;
+        public static int intercom_view_more = 0x7f150386;
+        public static int intercom_view_more_details = 0x7f150387;
+        public static int intercom_view_post = 0x7f150388;
+        public static int intercom_we_run_on_fin = 0x7f150389;
+        public static int intercom_we_run_on_intercom = 0x7f15038a;
+        public static int intercom_working_on_it = 0x7f15038b;
+        public static int intercom_you = 0x7f15038c;
+        public static int intercom_you_are_all_up_to_date = 0x7f15038d;
+        public static int intercom_you_have_new_messages = 0x7f15038e;
+        public static int intercom_you_rated_the_conversation = 0x7f15038f;
+        public static int intercom_youll_be_notified_here_and_by_email = 0x7f150390;
+        public static int intercom_your_checklists = 0x7f150391;
+        public static int intercom_your_conversations = 0x7f150392;
+        public static int intercom_your_recent_conversations = 0x7f150393;
+        public static int intercom_your_recent_message = 0x7f150394;
+        public static int intercom_your_recent_messages = 0x7f150395;
+        public static int intercom_your_ticket = 0x7f150396;
+
+        private string() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class style {
+        public static int Intercom_BaseMaterial = 0x7f1601ff;
+        public static int Intercom_BaseMaterial_Compose = 0x7f160200;
+        public static int Intercom_CarouselTheme = 0x7f160203;
+        public static int Intercom_LightBoxTheme = 0x7f160204;
+        public static int Intercom_Light_NoActionBar = 0x7f160201;
+        public static int Intercom_ModalActivityTheme = 0x7f160205;
+        public static int Intercom_NoteTheme = 0x7f160206;
+        public static int Intercom_PanelTheme = 0x7f160207;
+        public static int Intercom_PostAnimation = 0x7f160208;
+        public static int Intercom_PostTheme = 0x7f160209;
+        public static int Intercom_TransparentTheme = 0x7f16020a;
+        public static int Intercom_TransparentTheme_WithAnimations = 0x7f16020b;
+        public static int Intercom_WindowAnimation_Fade = 0x7f160202;
+        public static int intercom_toolbar_inbox_title_style = 0x7f16072b;
+        public static int intercom_toolbar_style = 0x7f16072c;
+        public static int intercom_toolbar_subtitle_style = 0x7f16072d;
+        public static int intercom_wallpaper_image_style = 0x7f16072e;
+
+        private style() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class styleable {
+        public static int AuthorAvatarView_activeStateSize = 0x00000000;
+        public static int AuthorAvatarView_avatarSize = 0x00000001;
+        public static int ExpandableLayout_intercomCanExpand = 0x00000000;
+        public static int LockableScrollView_intercomExpanded = 0x00000000;
+        public static int LockableScrollView_intercomHeightLimit = 0x00000001;
+        public static int LockableScrollView_intercomInterceptTouch = 0x00000002;
+        public static int[] AuthorAvatarView = {com.polymarket.android.R.attr.activeStateSize, com.polymarket.android.R.attr.avatarSize};
+        public static int[] ExpandableLayout = {com.polymarket.android.R.attr.intercomCanExpand};
+        public static int[] LockableScrollView = {com.polymarket.android.R.attr.intercomExpanded, com.polymarket.android.R.attr.intercomHeightLimit, com.polymarket.android.R.attr.intercomInterceptTouch};
+
+        private styleable() {
+        }
+    }
+
+    /* loaded from: classes6.dex */
+    public static final class xml {
+        public static int intercom_file_paths = 0x7f180007;
+
+        private xml() {
+        }
+    }
+
+    private R() {
+    }
+}

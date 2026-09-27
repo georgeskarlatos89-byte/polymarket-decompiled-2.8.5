@@ -1,0 +1,25 @@
+{
+  "name": "stream-denial-login-required",
+  "description": "The QA live game event carries a signed-stream provider and every video-stream resolution is denied with login_required; all other traffic is live.",
+  "unmatched": "passthrough",
+  "rules": [
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/*/stream" },
+      "respond": [
+        { "status": 200, "body": { "denialReason": "login_required" } }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/slug/qa-stream-denial-game" },
+      "respond": [
+        { "status": 200, "fixture": "stream-denial-event" }
+      ]
+    },
+    {
+      "match": { "method": "GET", "path": "/client/v1/events/qa-stream-denial-evt" },
+      "respond": [
+        { "status": 200, "fixture": "stream-denial-event" }
+      ]
+    }
+  ]
+}

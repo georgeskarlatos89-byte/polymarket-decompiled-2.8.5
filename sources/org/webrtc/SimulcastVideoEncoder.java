@@ -1,0 +1,27 @@
+package org.webrtc;
+
+/* compiled from: r8-map-id-826db3e0ccd5eff4e36cfb5c0bfeee0451562e7e7652a4d6d90edd453ef96714 */
+/* loaded from: classes6.dex */
+public class SimulcastVideoEncoder extends WrappedNativeVideoEncoder {
+    VideoEncoderFactory fallback;
+    VideoCodecInfo info;
+    VideoEncoderFactory primary;
+
+    public SimulcastVideoEncoder(VideoEncoderFactory videoEncoderFactory, VideoEncoderFactory videoEncoderFactory2, VideoCodecInfo videoCodecInfo) {
+        this.primary = videoEncoderFactory;
+        this.fallback = videoEncoderFactory2;
+        this.info = videoCodecInfo;
+    }
+
+    public static native long nativeCreateEncoder(long j, VideoEncoderFactory videoEncoderFactory, VideoEncoderFactory videoEncoderFactory2, VideoCodecInfo videoCodecInfo);
+
+    @Override // org.webrtc.WrappedNativeVideoEncoder, org.webrtc.VideoEncoder
+    public long createNative(long j) {
+        return nativeCreateEncoder(j, this.primary, this.fallback, this.info);
+    }
+
+    @Override // org.webrtc.WrappedNativeVideoEncoder, org.webrtc.VideoEncoder
+    public boolean isHardwareEncoder() {
+        return false;
+    }
+}
