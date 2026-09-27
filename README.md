@@ -1,6 +1,6 @@
 # polymarket-decompiled-2.8.5
 
-Decompiled sources of the Polymarket Android app.
+Decompiled sources and resources of the Polymarket Android app.
 
 - Package: `com.polymarket.android`
 - Version: `2.8.5` (versionCode 21647)
@@ -9,7 +9,14 @@ Decompiled sources of the Polymarket Android app.
 
 ## Layout
 
-- `sources/` – Java sources produced from `classes*.dex` (20,240 files across `com`, `androidx`, `kotlin`, `okhttp3`, `io.intercom`, `io.sentry`, `coil3`, `org`, `bo`, `defpackage`, ...).
-- `resources/` – decoded `AndroidManifest.xml`, `res/`, `assets/`, raw `classes.dex`–`classes6.dex`, `META-INF/`, and bundled `.properties` / notice files.
+- `sources/` — Java sources produced from `base.apk`'s `classes*.dex` (20,240 files across `com`, `androidx`, `kotlin`, `okhttp3`, `io.intercom`, `io.sentry`, `coil3`, `org`, `bo`, `defpackage`, ...).
+- `resources/` — decoded `AndroidManifest.xml`, `res/`, `assets/`, raw `classes.dex`–`classes6.dex`, `META-INF/`, and bundled `.properties` / notice files from `base.apk`.
+- `splits/` — one directory per split APK from the APKM bundle (resource-only; no additional application code):
+  - `arm64_v8a/` — 40 native `.so` libraries.
+  - `xxxhdpi/` — density-specific drawables.
+  - `ar/`, `de/`, `en/`, `es/`, `et/`, `fi/`, `fr/`, `hi/`, `hu/`, `in/`, `it/`, `ja/`, `ko/`, `ms/`, `nl/`, `pl/`, `pt/`, `ru/`, `sv/`, `th/`, `tr/`, `uk/`, `vi/`, `zh/` — 24 per-locale string resources.
 
-Only `base.apk` from the APKM bundle was decompiled; language, density and ABI split APKs contain no additional application code.
+## Notes
+
+- `sources/defpackage/nul.java` and `sources/defpackage/prn.java` are stored as `nul_.java` and `prn_.java` because `nul` and `prn` are reserved device names on Windows and Git cannot open files with those exact base names.
+- `splits/arm64_v8a/resources/lib/arm64-v8a/libUSLive.so` is ~84 MB. GitHub accepts it but flags files over 50 MB with a warning; it is under the 100 MB hard limit.
